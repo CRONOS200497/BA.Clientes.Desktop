@@ -1,0 +1,295 @@
+C:\Users\AndresFelipeRojasLop\documents\visual studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Clientes.exe.config
+C:\Users\AndresFelipeRojasLop\documents\visual studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Clientes.exe
+C:\Users\AndresFelipeRojasLop\documents\visual studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Clientes.pdb
+C:\Users\AndresFelipeRojasLop\documents\visual studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Controllers.dll
+C:\Users\AndresFelipeRojasLop\documents\visual studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Models.dll
+C:\Users\AndresFelipeRojasLop\documents\visual studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\bin\Debug\EntityFramework.dll
+C:\Users\AndresFelipeRojasLop\documents\visual studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\AndresFelipeRojasLop\documents\visual studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Controllers.pdb
+C:\Users\AndresFelipeRojasLop\documents\visual studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Models.pdb
+C:\Users\AndresFelipeRojasLop\documents\visual studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\bin\Debug\EntityFramework.xml
+C:\Users\AndresFelipeRojasLop\documents\visual studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\AndresFelipeRojasLop\documents\visual studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Views.csprojResolveAssemblyReference.cache
+C:\Users\AndresFelipeRojasLop\documents\visual studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.Master.resources
+C:\Users\AndresFelipeRojasLop\documents\visual studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Properties.Resources.resources
+C:\Users\AndresFelipeRojasLop\documents\visual studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Views.csproj.GenerateResource.Cache
+C:\Users\AndresFelipeRojasLop\documents\visual studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.exe
+C:\Users\AndresFelipeRojasLop\documents\visual studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.pdb
+C:\Users\AndresFelipeRojasLop\documents\visual studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.RegistrarClientes.resources
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Clientes.exe.config
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Clientes.exe
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Clientes.pdb
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Controllers.dll
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Models.dll
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\bin\Debug\EntityFramework.dll
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\bin\Debug\Microsoft.VisualBasic.dll
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Controllers.pdb
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Models.pdb
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\bin\Debug\EntityFramework.xml
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\bin\Debug\Interop.AcroPDFLib.dll
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\bin\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Views.csprojResolveAssemblyReference.cache
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\Interop.AcroPDFLib.dll
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Views.csproj.ResolveComReference.cache
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.CargarDocumentoNuevoFamilia.resources
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.Cartera.resources
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.CitasMedicas.resources
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.DocumentosFamilia.resources
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.JuntasMedicas.resources
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.ConceptosMedicos.resources
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.FichasMedicas.resources
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.IniciarSesion.resources
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.ModificarDocumentoFamilia.resources
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.ModificarDocumento.resources
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.CargarDocumentoNuevo.resources
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.DocumentosCliente.resources
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.GestionFamiliares.resources
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.GestionClientes.resources
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.ModificarClientes.resources
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.ModificarFamiliares.resources
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.SeguimientoFamiliares.resources
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.SeguimientoCliente.resources
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.NovedadesFamiliares.resources
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.NovedadesCliente.resources
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.RegistrarFamiliares.resources
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.RegistrarClientes.resources
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.Master.resources
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosCitasMedicas.resources
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosCartera.resources
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosConceptos.resources
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosJuntas.resources
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosSeguimientoFamilia.resources
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosFichas.resources
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosSeguimientos.resources
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosNovedadesFamilia.resources
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosNovedades.resources
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosFamilia.resources
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosClientes.resources
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Properties.Resources.resources
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Views.csproj.GenerateResource.Cache
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.exe
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.pdb
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Clientes.exe.manifest
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Clientes.application
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.exe.manifest
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.application
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Clientes.exe.config
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\Interop.AcroPDFLib.dll
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\AxInterop.AcroPDFLib.dll
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Views.csproj.ResolveComReference.cache
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.exe
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.pdb
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Clientes.exe.manifest
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Clientes.application
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Clientes.exe
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Clientes.pdb
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Controllers.dll
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Models.dll
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\bin\Debug\EntityFramework.dll
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\bin\Debug\EntityFramework.SqlServer.dll
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\bin\Debug\Microsoft.VisualBasic.dll
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Controllers.pdb
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Models.pdb
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\bin\Debug\EntityFramework.xml
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\bin\Debug\EntityFramework.SqlServer.xml
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\bin\Debug\Interop.AcroPDFLib.dll
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\bin\Debug\AxInterop.AcroPDFLib.dll
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Views.csprojResolveAssemblyReference.cache
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.CargarDocumentoNuevoFamilia.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.Cartera.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.CitasMedicas.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.DocumentosFamilia.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.JuntasMedicas.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.ConceptosMedicos.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.FichasMedicas.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.IniciarSesion.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.ModificarDocumentoFamilia.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.ModificarDocumento.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.CargarDocumentoNuevo.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.DocumentosCliente.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.GestionFamiliares.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.GestionClientes.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.ModificarClientes.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.ModificarFamiliares.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.SeguimientoFamiliares.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.SeguimientoCliente.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.NovedadesFamiliares.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.NovedadesCliente.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.RegistrarFamiliares.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.RegistrarClientes.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.Master.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosCitasMedicas.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosCartera.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosConceptos.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosJuntas.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosSeguimientoFamilia.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosFichas.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosSeguimientos.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosNovedadesFamilia.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosNovedades.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosFamilia.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosClientes.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Properties.Resources.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Views.csproj.GenerateResource.Cache
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.exe.manifest
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.application
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Clientes.exe.config
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\Interop.AcroPDFLib.dll
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\AxInterop.AcroPDFLib.dll
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Views.csproj.ResolveComReference.cache
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.exe
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.pdb
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Clientes.exe.manifest
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Clientes.application
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Clientes.exe
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Clientes.pdb
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Controllers.dll
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Correos.dll
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Models.dll
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\bin\Debug\EntityFramework.dll
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\bin\Debug\EntityFramework.SqlServer.dll
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\bin\Debug\Microsoft.VisualBasic.dll
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Controllers.pdb
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Correos.pdb
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Models.pdb
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\bin\Debug\EntityFramework.xml
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\bin\Debug\EntityFramework.SqlServer.xml
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\bin\Debug\Interop.AcroPDFLib.dll
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\bin\Debug\AxInterop.AcroPDFLib.dll
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Views.csprojResolveAssemblyReference.cache
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.CargarDocumentoNuevoFamilia.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.Cartera.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.CitasMedicas.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.DocumentosFamilia.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.JuntasMedicas.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.ConceptosMedicos.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.FichasMedicas.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.IniciarSesion.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.ModificarDocumentoFamilia.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.ModificarDocumento.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.CargarDocumentoNuevo.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.DocumentosCliente.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.GestionFamiliares.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.GestionClientes.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.ModificarClientes.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.ModificarFamiliares.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.SeguimientoFamiliares.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.SeguimientoCliente.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.NovedadesFamiliares.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.NovedadesCliente.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.RegistrarFamiliares.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.RegistrarClientes.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.Master.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosCitasMedicas.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosCartera.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosConceptos.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosJuntas.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosSeguimientoFamilia.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosFichas.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosSeguimientos.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosNovedadesFamilia.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosNovedades.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosFamilia.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosClientes.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Properties.Resources.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Views.csproj.GenerateResource.Cache
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.exe.manifest
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.application
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\bin\Debug\EASendMail.dll
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.AgendaClientes.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.AgendaFamilia.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.Parametrizacion.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.Batallones.resources
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.Dispensarios.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Clientes.exe.config
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\Interop.AcroPDFLib.dll
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\AxInterop.AcroPDFLib.dll
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Views.csproj.ResolveComReference.cache
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.exe
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.pdb
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Clientes.exe.config
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Clientes.exe.manifest
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Clientes.application
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Clientes.exe
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Clientes.pdb
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Controllers.dll
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Correos.dll
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Models.dll
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\bin\Debug\EASendMail.dll
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\bin\Debug\EntityFramework.dll
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\bin\Debug\EntityFramework.SqlServer.dll
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\bin\Debug\Microsoft.VisualBasic.dll
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Controllers.pdb
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Correos.pdb
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\bin\Debug\BA.Models.pdb
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\bin\Debug\EntityFramework.xml
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\bin\Debug\EntityFramework.SqlServer.xml
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\bin\Debug\Interop.AcroPDFLib.dll
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\bin\Debug\AxInterop.AcroPDFLib.dll
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Views.csprojResolveAssemblyReference.cache
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\Interop.AcroPDFLib.dll
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\AxInterop.AcroPDFLib.dll
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Views.csproj.ResolveComReference.cache
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.AgendaFamilia.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.AgendaClientes.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.AgregarAudienciaProcuraduria.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.AgregarAudienciaJuzgado.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.AudienciasProcuraduria.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.AudienciasJuzgado.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.Dispensarios.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.Batallones.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.CargarDocumentoNuevoFamilia.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.Cartera.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.CitasMedicas.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.DocumentosFamilia.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.HistorialSeguimientos.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.JuntasMedicas.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.ConceptosMedicos.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.FichasMedicas.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.IniciarSesion.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.ModificarDocumentoFamilia.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.ModificarDocumento.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.CargarDocumentoNuevo.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.DocumentosCliente.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.GestionFamiliares.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.GestionClientes.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.ModificarClientes.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.ModificarFamiliares.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.Parametrizacion.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.RegistrarSeguimientoTareas.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.SeguimientoFamiliares.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.SeguimientoCliente.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.NovedadesFamiliares.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.NovedadesCliente.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.RegistrarFamiliares.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.RegistrarClientes.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.MenuPrincipal.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.Tareas.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosSeguimientosTareas.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosRegistroTarea.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosAudienciasProcuraduria.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosCitasMedicas.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosCartera.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosAudiencias.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosConceptos.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosJuntas.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosSeguimientoFamilia.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosFichas.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosSeguimientos.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosNovedadesFamilia.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosNovedades.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosFamilia.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Formularios.VerDocumentosClientes.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.Properties.Resources.resources
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Views.csproj.GenerateResource.Cache
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.exe.manifest
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.application
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.exe
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Clientes\obj\Debug\BA.Clientes.pdb

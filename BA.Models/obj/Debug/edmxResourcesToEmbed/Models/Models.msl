@@ -1,0 +1,820 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbBarriosAbogadosModelStoreContainer" CdmEntityContainer="dbBarriosAbogadosEntities">
+    <EntitySetMapping Name="tblDepartamentos">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblDepartamentos">
+        <MappingFragment StoreEntitySet="tblDepartamentos">
+          <ScalarProperty Name="id_Departamento" ColumnName="id_Departamento" />
+          <ScalarProperty Name="Nombre_Departamento" ColumnName="Nombre_Departamento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDocumentosClientes">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblDocumentosClientes">
+        <MappingFragment StoreEntitySet="tblDocumentosClientes">
+          <ScalarProperty Name="id_documento" ColumnName="id_documento" />
+          <ScalarProperty Name="Nombre_Documento" ColumnName="Nombre_Documento" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDocumentosFamilia">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblDocumentosFamilia">
+        <MappingFragment StoreEntitySet="tblDocumentosFamilia">
+          <ScalarProperty Name="id_documento_Familia" ColumnName="id_documento_Familia" />
+          <ScalarProperty Name="Nombre_Documento_Familia" ColumnName="Nombre_Documento_Familia" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDocumentosNovedades">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblDocumentosNovedades">
+        <MappingFragment StoreEntitySet="tblDocumentosNovedades">
+          <ScalarProperty Name="id_Documento_Novedad" ColumnName="id_Documento_Novedad" />
+          <ScalarProperty Name="Nombre_Documento_Novedad" ColumnName="Nombre_Documento_Novedad" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEstadosProcesos">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblEstadosProcesos">
+        <MappingFragment StoreEntitySet="tblEstadosProcesos">
+          <ScalarProperty Name="id_Estado_Proceso" ColumnName="id_Estado_Proceso" />
+          <ScalarProperty Name="Nombre_Estado_Proceso" ColumnName="Nombre_Estado_Proceso" />
+          <ScalarProperty Name="Cantidad_Dias_Minimos" ColumnName="Cantidad_Dias_Minimos" />
+          <ScalarProperty Name="Cantidad_Dias_Maximos" ColumnName="Cantidad_Dias_Maximos" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEtapasProceso">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblEtapasProceso">
+        <MappingFragment StoreEntitySet="tblEtapasProceso">
+          <ScalarProperty Name="id_EtapasProceso" ColumnName="id_EtapasProceso" />
+          <ScalarProperty Name="Nombre_EtapasProceso" ColumnName="Nombre_EtapasProceso" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblFuerza">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblFuerza">
+        <MappingFragment StoreEntitySet="tblFuerza">
+          <ScalarProperty Name="id_Fuerza" ColumnName="id_Fuerza" />
+          <ScalarProperty Name="Nombre_Fuerza" ColumnName="Nombre_Fuerza" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblGrados">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblGrados">
+        <MappingFragment StoreEntitySet="tblGrados">
+          <ScalarProperty Name="id_grado" ColumnName="id_grado" />
+          <ScalarProperty Name="Nombre_Rago" ColumnName="Nombre_Rago" />
+          <ScalarProperty Name="id_fuerza" ColumnName="id_fuerza" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblRedesSociales">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblRedesSociales">
+        <MappingFragment StoreEntitySet="tblRedesSociales">
+          <ScalarProperty Name="id_RedSocial" ColumnName="id_RedSocial" />
+          <ScalarProperty Name="Nombre_Red_Social" ColumnName="Nombre_Red_Social" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTipoDocumento">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblTipoDocumento">
+        <MappingFragment StoreEntitySet="tblTipoDocumento">
+          <ScalarProperty Name="id_Tipo_Documento" ColumnName="id_Tipo_Documento" />
+          <ScalarProperty Name="Nombre_Tipo_Documento" ColumnName="Nombre_Tipo_Documento" />
+          <ScalarProperty Name="Sigla" ColumnName="Sigla" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTipoFamiliar">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblTipoFamiliar">
+        <MappingFragment StoreEntitySet="tblTipoFamiliar">
+          <ScalarProperty Name="id_Tipo_Familiar" ColumnName="id_Tipo_Familiar" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTipoRegistro">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblTipoRegistro">
+        <MappingFragment StoreEntitySet="tblTipoRegistro">
+          <ScalarProperty Name="id_Tipo_Registro" ColumnName="id_Tipo_Registro" />
+          <ScalarProperty Name="Nombre_Tipo_Registro" ColumnName="Nombre_Tipo_Registro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTitulosValores">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblTitulosValores">
+        <MappingFragment StoreEntitySet="tblTitulosValores">
+          <ScalarProperty Name="id_Titulos_Valores" ColumnName="id_Titulos_Valores" />
+          <ScalarProperty Name="Nombre_Titulo_Valor" ColumnName="Nombre_Titulo_Valor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCiudades">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblCiudades">
+        <MappingFragment StoreEntitySet="tblCiudades">
+          <ScalarProperty Name="id_Ciudad" ColumnName="id_Ciudad" />
+          <ScalarProperty Name="Nombre_Ciudad" ColumnName="Nombre_Ciudad" />
+          <ScalarProperty Name="id_Departamento" ColumnName="id_Departamento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblFamilia">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblFamilia">
+        <MappingFragment StoreEntitySet="tblFamilia">
+          <ScalarProperty Name="Usurio" ColumnName="Usurio" />
+          <ScalarProperty Name="Fecha_Actualizacion" ColumnName="Fecha_Actualizacion" />
+          <ScalarProperty Name="Fecha_Creacion" ColumnName="Fecha_Creacion" />
+          <ScalarProperty Name="Fecha_Autenticacion" ColumnName="Fecha_Autenticacion" />
+          <ScalarProperty Name="Etapa_Proceso" ColumnName="Etapa_Proceso" />
+          <ScalarProperty Name="Estado_Proceso" ColumnName="Estado_Proceso" />
+          <ScalarProperty Name="Barrio" ColumnName="Barrio" />
+          <ScalarProperty Name="Direccion_Residencia" ColumnName="Direccion_Residencia" />
+          <ScalarProperty Name="Casa_Propia" ColumnName="Casa_Propia" />
+          <ScalarProperty Name="Otro_Lugar_Residencia" ColumnName="Otro_Lugar_Residencia" />
+          <ScalarProperty Name="Ciudad_Residencia" ColumnName="Ciudad_Residencia" />
+          <ScalarProperty Name="Departamento_Residencia" ColumnName="Departamento_Residencia" />
+          <ScalarProperty Name="Nombre_Red_Social" ColumnName="Nombre_Red_Social" />
+          <ScalarProperty Name="Red_Social" ColumnName="Red_Social" />
+          <ScalarProperty Name="Correo" ColumnName="Correo" />
+          <ScalarProperty Name="Telefono_Celular" ColumnName="Telefono_Celular" />
+          <ScalarProperty Name="Telefono_Fijo" ColumnName="Telefono_Fijo" />
+          <ScalarProperty Name="Otro_Lugar_Registro" ColumnName="Otro_Lugar_Registro" />
+          <ScalarProperty Name="Ciudad_Registro" ColumnName="Ciudad_Registro" />
+          <ScalarProperty Name="Departamento_Registro" ColumnName="Departamento_Registro" />
+          <ScalarProperty Name="Nombre_Lugar_Registro" ColumnName="Nombre_Lugar_Registro" />
+          <ScalarProperty Name="Tipo_Registro" ColumnName="Tipo_Registro" />
+          <ScalarProperty Name="Fecha_Nacimiento" ColumnName="Fecha_Nacimiento" />
+          <ScalarProperty Name="Otro_Lugar_Expedicion" ColumnName="Otro_Lugar_Expedicion" />
+          <ScalarProperty Name="Ciudad_Expedicion" ColumnName="Ciudad_Expedicion" />
+          <ScalarProperty Name="Departamento_Expedicion" ColumnName="Departamento_Expedicion" />
+          <ScalarProperty Name="Numero_Documento" ColumnName="Numero_Documento" />
+          <ScalarProperty Name="Tipo_Documento" ColumnName="Tipo_Documento" />
+          <ScalarProperty Name="Segundo_Apellido" ColumnName="Segundo_Apellido" />
+          <ScalarProperty Name="Primer_Apellido" ColumnName="Primer_Apellido" />
+          <ScalarProperty Name="Otro_Nombre" ColumnName="Otro_Nombre" />
+          <ScalarProperty Name="Segundo_Nombre" ColumnName="Segundo_Nombre" />
+          <ScalarProperty Name="Primer_Nombre" ColumnName="Primer_Nombre" />
+          <ScalarProperty Name="Parentesco" ColumnName="Parentesco" />
+          <ScalarProperty Name="Numero_Documento_Cliente" ColumnName="Numero_Documento_Cliente" />
+          <ScalarProperty Name="id_Familiar" ColumnName="id_Familiar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblParametros">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblParametros">
+        <MappingFragment StoreEntitySet="tblParametros">
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Nombre_Parametro" ColumnName="Nombre_Parametro" />
+          <ScalarProperty Name="id_prametro" ColumnName="id_prametro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDocumentosCargados">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblDocumentosCargados">
+        <MappingFragment StoreEntitySet="tblDocumentosCargados">
+          <ScalarProperty Name="usuario" ColumnName="usuario" />
+          <ScalarProperty Name="informar_cliente" ColumnName="informar_cliente" />
+          <ScalarProperty Name="fecha_actualizado" ColumnName="fecha_actualizado" />
+          <ScalarProperty Name="fecha_subido" ColumnName="fecha_subido" />
+          <ScalarProperty Name="ruta" ColumnName="ruta" />
+          <ScalarProperty Name="nombre_archivo" ColumnName="nombre_archivo" />
+          <ScalarProperty Name="tipo_doc" ColumnName="tipo_doc" />
+          <ScalarProperty Name="doc_cliente" ColumnName="doc_cliente" />
+          <ScalarProperty Name="id_Archivo" ColumnName="id_Archivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDocumentosCargadosFamilia">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblDocumentosCargadosFamilia">
+        <MappingFragment StoreEntitySet="tblDocumentosCargadosFamilia">
+          <ScalarProperty Name="usuario" ColumnName="usuario" />
+          <ScalarProperty Name="informar_cliente" ColumnName="informar_cliente" />
+          <ScalarProperty Name="fecha_actualizado" ColumnName="fecha_actualizado" />
+          <ScalarProperty Name="fecha_subido" ColumnName="fecha_subido" />
+          <ScalarProperty Name="ruta" ColumnName="ruta" />
+          <ScalarProperty Name="nombre_archivo" ColumnName="nombre_archivo" />
+          <ScalarProperty Name="tipo_doc" ColumnName="tipo_doc" />
+          <ScalarProperty Name="doc_cliente" ColumnName="doc_cliente" />
+          <ScalarProperty Name="id_Archivo" ColumnName="id_Archivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblPerfiles">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblPerfiles">
+        <MappingFragment StoreEntitySet="tblPerfiles">
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Nombre_Perfil" ColumnName="Nombre_Perfil" />
+          <ScalarProperty Name="id_perfil" ColumnName="id_perfil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblRoles">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblRoles">
+        <MappingFragment StoreEntitySet="tblRoles">
+          <ScalarProperty Name="Estado_Rol" ColumnName="Estado_Rol" />
+          <ScalarProperty Name="Id_Perfil" ColumnName="Id_Perfil" />
+          <ScalarProperty Name="Nombre_Rol" ColumnName="Nombre_Rol" />
+          <ScalarProperty Name="Id_Rol" ColumnName="Id_Rol" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblUsuarios">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblUsuarios">
+        <MappingFragment StoreEntitySet="tblUsuarios">
+          <ScalarProperty Name="fecha_creado" ColumnName="fecha_creado" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="perfil" ColumnName="perfil" />
+          <ScalarProperty Name="Correo" ColumnName="Correo" />
+          <ScalarProperty Name="Contrasena" ColumnName="Contrasena" />
+          <ScalarProperty Name="login" ColumnName="login" />
+          <ScalarProperty Name="Segundo_Apellido" ColumnName="Segundo_Apellido" />
+          <ScalarProperty Name="Primer_Apellido" ColumnName="Primer_Apellido" />
+          <ScalarProperty Name="Segundo_Nombre" ColumnName="Segundo_Nombre" />
+          <ScalarProperty Name="Primer_Nombre" ColumnName="Primer_Nombre" />
+          <ScalarProperty Name="id_Usuario" ColumnName="id_Usuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTiposSeguimientos">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblTiposSeguimientos">
+        <MappingFragment StoreEntitySet="tblTiposSeguimientos">
+          <ScalarProperty Name="Nombre_Tipo_Seguimiento" ColumnName="Nombre_Tipo_Seguimiento" />
+          <ScalarProperty Name="Id_Tipo_Seguimiento" ColumnName="Id_Tipo_Seguimiento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblNovedades">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblNovedades">
+        <MappingFragment StoreEntitySet="tblNovedades">
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="Fecha_Modificado" ColumnName="Fecha_Modificado" />
+          <ScalarProperty Name="Fecha_Subido" ColumnName="Fecha_Subido" />
+          <ScalarProperty Name="Informar_Cliente" ColumnName="Informar_Cliente" />
+          <ScalarProperty Name="Ruta" ColumnName="Ruta" />
+          <ScalarProperty Name="Nombre_Archivo" ColumnName="Nombre_Archivo" />
+          <ScalarProperty Name="Adjuntar_Archivo" ColumnName="Adjuntar_Archivo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Tipo_Novedad" ColumnName="Tipo_Novedad" />
+          <ScalarProperty Name="Doc_Cliente" ColumnName="Doc_Cliente" />
+          <ScalarProperty Name="Id_Novedad" ColumnName="Id_Novedad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblNovedadesFamilia">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblNovedadesFamilia">
+        <MappingFragment StoreEntitySet="tblNovedadesFamilia">
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="Fecha_Modificado" ColumnName="Fecha_Modificado" />
+          <ScalarProperty Name="Fecha_Subido" ColumnName="Fecha_Subido" />
+          <ScalarProperty Name="Informar_Cliente" ColumnName="Informar_Cliente" />
+          <ScalarProperty Name="Ruta" ColumnName="Ruta" />
+          <ScalarProperty Name="Nombre_Archivo" ColumnName="Nombre_Archivo" />
+          <ScalarProperty Name="Adjuntar_Archivo" ColumnName="Adjuntar_Archivo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Tipo_Novedad" ColumnName="Tipo_Novedad" />
+          <ScalarProperty Name="Doc_Familiar" ColumnName="Doc_Familiar" />
+          <ScalarProperty Name="Id_Novedad" ColumnName="Id_Novedad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSeguimientoCliente">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblSeguimientoCliente">
+        <MappingFragment StoreEntitySet="tblSeguimientoCliente">
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="Fecha_Modificado" ColumnName="Fecha_Modificado" />
+          <ScalarProperty Name="Fecha_Seguimiento" ColumnName="Fecha_Seguimiento" />
+          <ScalarProperty Name="Informar_Cliente" ColumnName="Informar_Cliente" />
+          <ScalarProperty Name="Ruta" ColumnName="Ruta" />
+          <ScalarProperty Name="Nombre_Archivo" ColumnName="Nombre_Archivo" />
+          <ScalarProperty Name="Adjuntar_Archivo" ColumnName="Adjuntar_Archivo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Tipo_Seguimiento" ColumnName="Tipo_Seguimiento" />
+          <ScalarProperty Name="Doc_Cliente" ColumnName="Doc_Cliente" />
+          <ScalarProperty Name="ID_Seguimiento" ColumnName="ID_Seguimiento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblSeguimientoFamiliar">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblSeguimientoFamiliar">
+        <MappingFragment StoreEntitySet="tblSeguimientoFamiliar">
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="Fecha_Modificado" ColumnName="Fecha_Modificado" />
+          <ScalarProperty Name="Fecha_Seguimiento" ColumnName="Fecha_Seguimiento" />
+          <ScalarProperty Name="Informar_Cliente" ColumnName="Informar_Cliente" />
+          <ScalarProperty Name="Ruta" ColumnName="Ruta" />
+          <ScalarProperty Name="Nombre_Archivo" ColumnName="Nombre_Archivo" />
+          <ScalarProperty Name="Adjuntar_Archivo" ColumnName="Adjuntar_Archivo" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Tipo_Seguimiento" ColumnName="Tipo_Seguimiento" />
+          <ScalarProperty Name="Doc_Familiar" ColumnName="Doc_Familiar" />
+          <ScalarProperty Name="ID_Seguimiento" ColumnName="ID_Seguimiento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblConceptos">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblConceptos">
+        <MappingFragment StoreEntitySet="tblConceptos">
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Nombre_Concepto" ColumnName="Nombre_Concepto" />
+          <ScalarProperty Name="id_Concepto" ColumnName="id_Concepto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEstadosCitasMedicas">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblEstadosCitasMedicas">
+        <MappingFragment StoreEntitySet="tblEstadosCitasMedicas">
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Nombre_Estado" ColumnName="Nombre_Estado" />
+          <ScalarProperty Name="id_Estado_Cita_Medica" ColumnName="id_Estado_Cita_Medica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEstadosConceptos">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblEstadosConceptos">
+        <MappingFragment StoreEntitySet="tblEstadosConceptos">
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Nombre_Estado" ColumnName="Nombre_Estado" />
+          <ScalarProperty Name="id_Estado_Concepto" ColumnName="id_Estado_Concepto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEstadosFichasMedicas">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblEstadosFichasMedicas">
+        <MappingFragment StoreEntitySet="tblEstadosFichasMedicas">
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Fuerza" ColumnName="Fuerza" />
+          <ScalarProperty Name="Nombre_Estado" ColumnName="Nombre_Estado" />
+          <ScalarProperty Name="id_Estado_Ficha_Medica" ColumnName="id_Estado_Ficha_Medica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEstadosJuntasMedicas">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblEstadosJuntasMedicas">
+        <MappingFragment StoreEntitySet="tblEstadosJuntasMedicas">
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Fuerza" ColumnName="Fuerza" />
+          <ScalarProperty Name="Nombre_Estado" ColumnName="Nombre_Estado" />
+          <ScalarProperty Name="id_Estado_Junta_Medica" ColumnName="id_Estado_Junta_Medica" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblConceptosMedicos">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblConceptosMedicos">
+        <MappingFragment StoreEntitySet="tblConceptosMedicos">
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="Fecha_Modificado" ColumnName="Fecha_Modificado" />
+          <ScalarProperty Name="Fecha_Cargado" ColumnName="Fecha_Cargado" />
+          <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+          <ScalarProperty Name="Informar_Cliente" ColumnName="Informar_Cliente" />
+          <ScalarProperty Name="Estado_Concepto" ColumnName="Estado_Concepto" />
+          <ScalarProperty Name="Ruta" ColumnName="Ruta" />
+          <ScalarProperty Name="Nombre_Archivo" ColumnName="Nombre_Archivo" />
+          <ScalarProperty Name="Adjuntar_Documento" ColumnName="Adjuntar_Documento" />
+          <ScalarProperty Name="Otro_Lugar" ColumnName="Otro_Lugar" />
+          <ScalarProperty Name="Ciudad" ColumnName="Ciudad" />
+          <ScalarProperty Name="Departamento" ColumnName="Departamento" />
+          <ScalarProperty Name="Dispensario" ColumnName="Dispensario" />
+          <ScalarProperty Name="Fecha_Emision" ColumnName="Fecha_Emision" />
+          <ScalarProperty Name="Tipo_Concepto" ColumnName="Tipo_Concepto" />
+          <ScalarProperty Name="Fuerza" ColumnName="Fuerza" />
+          <ScalarProperty Name="Doc_Cliente" ColumnName="Doc_Cliente" />
+          <ScalarProperty Name="id_Concepto" ColumnName="id_Concepto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblFichasMedicas">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblFichasMedicas">
+        <MappingFragment StoreEntitySet="tblFichasMedicas">
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="Fecha_Modificado" ColumnName="Fecha_Modificado" />
+          <ScalarProperty Name="Fecha_Cargado" ColumnName="Fecha_Cargado" />
+          <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+          <ScalarProperty Name="Informar_Cliente" ColumnName="Informar_Cliente" />
+          <ScalarProperty Name="Ruta" ColumnName="Ruta" />
+          <ScalarProperty Name="Nombre_Archivo" ColumnName="Nombre_Archivo" />
+          <ScalarProperty Name="Adjuntar_Documento" ColumnName="Adjuntar_Documento" />
+          <ScalarProperty Name="Fecha_Salida" ColumnName="Fecha_Salida" />
+          <ScalarProperty Name="Otro_Lugar" ColumnName="Otro_Lugar" />
+          <ScalarProperty Name="Ciudad" ColumnName="Ciudad" />
+          <ScalarProperty Name="Departamento" ColumnName="Departamento" />
+          <ScalarProperty Name="Dispensario" ColumnName="Dispensario" />
+          <ScalarProperty Name="Estado_Ficha_Medica" ColumnName="Estado_Ficha_Medica" />
+          <ScalarProperty Name="Fuerza" ColumnName="Fuerza" />
+          <ScalarProperty Name="Doc_Cliente" ColumnName="Doc_Cliente" />
+          <ScalarProperty Name="id_Ficha" ColumnName="id_Ficha" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblJuntasMedicas">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblJuntasMedicas">
+        <MappingFragment StoreEntitySet="tblJuntasMedicas">
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="Fecha_Modificado" ColumnName="Fecha_Modificado" />
+          <ScalarProperty Name="Fecha_Cargado" ColumnName="Fecha_Cargado" />
+          <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+          <ScalarProperty Name="Informar_Cliente" ColumnName="Informar_Cliente" />
+          <ScalarProperty Name="Ruta" ColumnName="Ruta" />
+          <ScalarProperty Name="Nombre_Archivo" ColumnName="Nombre_Archivo" />
+          <ScalarProperty Name="Adjuntar_Documento" ColumnName="Adjuntar_Documento" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Otro_Lugar" ColumnName="Otro_Lugar" />
+          <ScalarProperty Name="Ciudad" ColumnName="Ciudad" />
+          <ScalarProperty Name="Departamento" ColumnName="Departamento" />
+          <ScalarProperty Name="Dispensario" ColumnName="Dispensario" />
+          <ScalarProperty Name="Estado_Junta_Medica" ColumnName="Estado_Junta_Medica" />
+          <ScalarProperty Name="Fecha_Junta" ColumnName="Fecha_Junta" />
+          <ScalarProperty Name="Fuerza" ColumnName="Fuerza" />
+          <ScalarProperty Name="Doc_Cliente" ColumnName="Doc_Cliente" />
+          <ScalarProperty Name="id_Junta" ColumnName="id_Junta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCitasMedicas">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblCitasMedicas">
+        <MappingFragment StoreEntitySet="tblCitasMedicas">
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="Fecha_Modificado" ColumnName="Fecha_Modificado" />
+          <ScalarProperty Name="Fecha_Cargado" ColumnName="Fecha_Cargado" />
+          <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+          <ScalarProperty Name="Informar_Cliente" ColumnName="Informar_Cliente" />
+          <ScalarProperty Name="Estado_Cita" ColumnName="Estado_Cita" />
+          <ScalarProperty Name="Ruta" ColumnName="Ruta" />
+          <ScalarProperty Name="Nombre_Archivo" ColumnName="Nombre_Archivo" />
+          <ScalarProperty Name="Adjuntar_Documento" ColumnName="Adjuntar_Documento" />
+          <ScalarProperty Name="Otro_Lugar" ColumnName="Otro_Lugar" />
+          <ScalarProperty Name="Ciudad" ColumnName="Ciudad" />
+          <ScalarProperty Name="Departamento" ColumnName="Departamento" />
+          <ScalarProperty Name="Nombre_Doctor" ColumnName="Nombre_Doctor" />
+          <ScalarProperty Name="Dispensario" ColumnName="Dispensario" />
+          <ScalarProperty Name="Fecha_Cita" ColumnName="Fecha_Cita" />
+          <ScalarProperty Name="Tipo_Cita" ColumnName="Tipo_Cita" />
+          <ScalarProperty Name="Fuerza" ColumnName="Fuerza" />
+          <ScalarProperty Name="Doc_Cliente" ColumnName="Doc_Cliente" />
+          <ScalarProperty Name="id_Concepto" ColumnName="id_Concepto" />
+          <ScalarProperty Name="id_Cita" ColumnName="id_Cita" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEstadosCuentas">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblEstadosCuentas">
+        <MappingFragment StoreEntitySet="tblEstadosCuentas">
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="Nombre_Estado_Cartera" ColumnName="Nombre_Estado_Cartera" />
+          <ScalarProperty Name="id_Estado_Cartera" ColumnName="id_Estado_Cartera" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCartera">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblCartera">
+        <MappingFragment StoreEntitySet="tblCartera">
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="fecha_Actualizado" ColumnName="fecha_Actualizado" />
+          <ScalarProperty Name="Fecha_Subido" ColumnName="Fecha_Subido" />
+          <ScalarProperty Name="Estado_Cuenta" ColumnName="Estado_Cuenta" />
+          <ScalarProperty Name="Ruta" ColumnName="Ruta" />
+          <ScalarProperty Name="Nombre_Archivo" ColumnName="Nombre_Archivo" />
+          <ScalarProperty Name="Adjuntar_Archivo" ColumnName="Adjuntar_Archivo" />
+          <ScalarProperty Name="Suma_Total" ColumnName="Suma_Total" />
+          <ScalarProperty Name="Documento_Activo" ColumnName="Documento_Activo" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Titulo_Valor" ColumnName="Titulo_Valor" />
+          <ScalarProperty Name="Sobre" ColumnName="Sobre" />
+          <ScalarProperty Name="Doc_Cliente" ColumnName="Doc_Cliente" />
+          <ScalarProperty Name="id_Cartera" ColumnName="id_Cartera" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblClientes">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblClientes">
+        <MappingFragment StoreEntitySet="tblClientes">
+          <ScalarProperty Name="Usurio" ColumnName="Usurio" />
+          <ScalarProperty Name="Fecha_Actualizado" ColumnName="Fecha_Actualizado" />
+          <ScalarProperty Name="Fecha_Creado" ColumnName="Fecha_Creado" />
+          <ScalarProperty Name="Fecha_Autenticado" ColumnName="Fecha_Autenticado" />
+          <ScalarProperty Name="Etapa_Proceso" ColumnName="Etapa_Proceso" />
+          <ScalarProperty Name="Estado_Proceso" ColumnName="Estado_Proceso" />
+          <ScalarProperty Name="Dispensario" ColumnName="Dispensario" />
+          <ScalarProperty Name="Fecha_Hechos" ColumnName="Fecha_Hechos" />
+          <ScalarProperty Name="Batallon" ColumnName="Batallon" />
+          <ScalarProperty Name="Numero_Contigente" ColumnName="Numero_Contigente" />
+          <ScalarProperty Name="Año_Contingente" ColumnName="Año_Contingente" />
+          <ScalarProperty Name="Fecha_Salida" ColumnName="Fecha_Salida" />
+          <ScalarProperty Name="Fecha_Ingreso" ColumnName="Fecha_Ingreso" />
+          <ScalarProperty Name="Grado" ColumnName="Grado" />
+          <ScalarProperty Name="Fuerza" ColumnName="Fuerza" />
+          <ScalarProperty Name="Barrio" ColumnName="Barrio" />
+          <ScalarProperty Name="Direccion_Residencia" ColumnName="Direccion_Residencia" />
+          <ScalarProperty Name="Casa_Propia" ColumnName="Casa_Propia" />
+          <ScalarProperty Name="Otro_Lugar_Residencia" ColumnName="Otro_Lugar_Residencia" />
+          <ScalarProperty Name="Ciudad_Residencia" ColumnName="Ciudad_Residencia" />
+          <ScalarProperty Name="Departamento_Residencia" ColumnName="Departamento_Residencia" />
+          <ScalarProperty Name="Nombre_Red_Social" ColumnName="Nombre_Red_Social" />
+          <ScalarProperty Name="Red_Social" ColumnName="Red_Social" />
+          <ScalarProperty Name="Correo" ColumnName="Correo" />
+          <ScalarProperty Name="Telefono_Celular" ColumnName="Telefono_Celular" />
+          <ScalarProperty Name="Telefono_Fijo" ColumnName="Telefono_Fijo" />
+          <ScalarProperty Name="Otro_Lugar_Registro" ColumnName="Otro_Lugar_Registro" />
+          <ScalarProperty Name="Ciudad_Registro" ColumnName="Ciudad_Registro" />
+          <ScalarProperty Name="Departamento_Registro" ColumnName="Departamento_Registro" />
+          <ScalarProperty Name="Nombre_Lugar_Registro" ColumnName="Nombre_Lugar_Registro" />
+          <ScalarProperty Name="Tipo_Registro" ColumnName="Tipo_Registro" />
+          <ScalarProperty Name="Fecha_Nacimiento" ColumnName="Fecha_Nacimiento" />
+          <ScalarProperty Name="Otro_Lugar_Expedicion" ColumnName="Otro_Lugar_Expedicion" />
+          <ScalarProperty Name="Ciudad_Expedicion" ColumnName="Ciudad_Expedicion" />
+          <ScalarProperty Name="Departamento_Expedicion" ColumnName="Departamento_Expedicion" />
+          <ScalarProperty Name="Numero_Documento_Cliente" ColumnName="Numero_Documento_Cliente" />
+          <ScalarProperty Name="Tipo_Documento" ColumnName="Tipo_Documento" />
+          <ScalarProperty Name="Segundo_Apellido" ColumnName="Segundo_Apellido" />
+          <ScalarProperty Name="Primer_Apellido" ColumnName="Primer_Apellido" />
+          <ScalarProperty Name="Otro_Nombre" ColumnName="Otro_Nombre" />
+          <ScalarProperty Name="Segundo_Nombre" ColumnName="Segundo_Nombre" />
+          <ScalarProperty Name="Primer_Nombre" ColumnName="Primer_Nombre" />
+          <ScalarProperty Name="id_Cliente" ColumnName="id_Cliente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCorreosClientes">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblCorreosClientes">
+        <MappingFragment StoreEntitySet="tblCorreosClientes">
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="Fecha_Actualizado" ColumnName="Fecha_Actualizado" />
+          <ScalarProperty Name="Fecha_Insertado" ColumnName="Fecha_Insertado" />
+          <ScalarProperty Name="Correo" ColumnName="Correo" />
+          <ScalarProperty Name="Doc_Cliente" ColumnName="Doc_Cliente" />
+          <ScalarProperty Name="id_Correo" ColumnName="id_Correo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTelefonosClientes">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblTelefonosClientes">
+        <MappingFragment StoreEntitySet="tblTelefonosClientes">
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="Fecha_Actualizado" ColumnName="Fecha_Actualizado" />
+          <ScalarProperty Name="Fecha_Insertado" ColumnName="Fecha_Insertado" />
+          <ScalarProperty Name="Numero_Telefono" ColumnName="Numero_Telefono" />
+          <ScalarProperty Name="Doc_Cliente" ColumnName="Doc_Cliente" />
+          <ScalarProperty Name="id_Telefono" ColumnName="id_Telefono" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblCorreosFamilia">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblCorreosFamilia">
+        <MappingFragment StoreEntitySet="tblCorreosFamilia">
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="Fecha_Actualizado" ColumnName="Fecha_Actualizado" />
+          <ScalarProperty Name="Fecha_Insertado" ColumnName="Fecha_Insertado" />
+          <ScalarProperty Name="Correo" ColumnName="Correo" />
+          <ScalarProperty Name="Doc_Familiar" ColumnName="Doc_Familiar" />
+          <ScalarProperty Name="id_Correo" ColumnName="id_Correo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTelefonosFamilia">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblTelefonosFamilia">
+        <MappingFragment StoreEntitySet="tblTelefonosFamilia">
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="Fecha_Actualizado" ColumnName="Fecha_Actualizado" />
+          <ScalarProperty Name="Fecha_Insertado" ColumnName="Fecha_Insertado" />
+          <ScalarProperty Name="Numero_Telefono" ColumnName="Numero_Telefono" />
+          <ScalarProperty Name="Doc_Familiar" ColumnName="Doc_Familiar" />
+          <ScalarProperty Name="id_Telefono" ColumnName="id_Telefono" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblAbogados">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblAbogados">
+        <MappingFragment StoreEntitySet="tblAbogados">
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Correo_Abogado" ColumnName="Correo_Abogado" />
+          <ScalarProperty Name="Nombre_Abogado" ColumnName="Nombre_Abogado" />
+          <ScalarProperty Name="id_Abogados" ColumnName="id_Abogados" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblJuzgados">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblJuzgados">
+        <MappingFragment StoreEntitySet="tblJuzgados">
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Nombre_Juzgado" ColumnName="Nombre_Juzgado" />
+          <ScalarProperty Name="id_Juzgado" ColumnName="id_Juzgado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblProcuradurias">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblProcuradurias">
+        <MappingFragment StoreEntitySet="tblProcuradurias">
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Nombre_Procuraduria" ColumnName="Nombre_Procuraduria" />
+          <ScalarProperty Name="id_Procuraduria" ColumnName="id_Procuraduria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblBatallones">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblBatallones">
+        <MappingFragment StoreEntitySet="tblBatallones">
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Fuerza" ColumnName="Fuerza" />
+          <ScalarProperty Name="Nombre_Batallon" ColumnName="Nombre_Batallon" />
+          <ScalarProperty Name="id_Batallon" ColumnName="id_Batallon" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblDispensarios">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblDispensarios">
+        <MappingFragment StoreEntitySet="tblDispensarios">
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Fuerza" ColumnName="Fuerza" />
+          <ScalarProperty Name="Nombre_Dispensario" ColumnName="Nombre_Dispensario" />
+          <ScalarProperty Name="id_Dispensario" ColumnName="id_Dispensario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="CopiaTablaClientes" FunctionName="dbBarriosAbogadosModel.Store.CopiaTablaClientes" />
+    <FunctionImportMapping FunctionImportName="CopiaTablaFamilia" FunctionName="dbBarriosAbogadosModel.Store.CopiaTablaFamilia" />
+    <FunctionImportMapping FunctionImportName="CopiaTablaAudienciasJuzgado" FunctionName="dbBarriosAbogadosModel.Store.CopiaTablaAudienciasJuzgado" />
+    <FunctionImportMapping FunctionImportName="CopiaTablaAudienciasProcuraduria" FunctionName="dbBarriosAbogadosModel.Store.CopiaTablaAudienciasProcuraduria" />
+    <FunctionImportMapping FunctionImportName="CopiaTablaCitasMedicas" FunctionName="dbBarriosAbogadosModel.Store.CopiaTablaCitasMedicas" />
+    <FunctionImportMapping FunctionImportName="CopiaTablaConceptosMedicos" FunctionName="dbBarriosAbogadosModel.Store.CopiaTablaConceptosMedicos" />
+    <FunctionImportMapping FunctionImportName="CopiaTablaCorreosClientes" FunctionName="dbBarriosAbogadosModel.Store.CopiaTablaCorreosClientes" />
+    <FunctionImportMapping FunctionImportName="CopiaTablaCorreosFamilia" FunctionName="dbBarriosAbogadosModel.Store.CopiaTablaCorreosFamilia" />
+    <FunctionImportMapping FunctionImportName="CopiaTablaDocumentosCargados" FunctionName="dbBarriosAbogadosModel.Store.CopiaTablaDocumentosCargados" />
+    <FunctionImportMapping FunctionImportName="CopiaTablaDocumentosCargadosFamilia" FunctionName="dbBarriosAbogadosModel.Store.CopiaTablaDocumentosCargadosFamilia" />
+    <FunctionImportMapping FunctionImportName="CopiaTablaFichasMedicas" FunctionName="dbBarriosAbogadosModel.Store.CopiaTablaFichasMedicas" />
+    <FunctionImportMapping FunctionImportName="CopiaTablaJuntasMedicas" FunctionName="dbBarriosAbogadosModel.Store.CopiaTablaJuntasMedicas" />
+    <FunctionImportMapping FunctionImportName="CopiaTablaNovedades" FunctionName="dbBarriosAbogadosModel.Store.CopiaTablaNovedades" />
+    <FunctionImportMapping FunctionImportName="CopiaTablaNovedadesFamilia" FunctionName="dbBarriosAbogadosModel.Store.CopiaTablaNovedadesFamilia" />
+    <FunctionImportMapping FunctionImportName="CopiaTablaPerfiles" FunctionName="dbBarriosAbogadosModel.Store.CopiaTablaPerfiles" />
+    <FunctionImportMapping FunctionImportName="CopiaTablaRoles" FunctionName="dbBarriosAbogadosModel.Store.CopiaTablaRoles" />
+    <FunctionImportMapping FunctionImportName="CopiaTablaSeguimientosCliente" FunctionName="dbBarriosAbogadosModel.Store.CopiaTablaSeguimientosCliente" />
+    <FunctionImportMapping FunctionImportName="CopiaTablaSeguimientosFamiliar" FunctionName="dbBarriosAbogadosModel.Store.CopiaTablaSeguimientosFamiliar" />
+    <FunctionImportMapping FunctionImportName="CopiaTablaTelefonosClientes" FunctionName="dbBarriosAbogadosModel.Store.CopiaTablaTelefonosClientes" />
+    <FunctionImportMapping FunctionImportName="CopiaTablaTelefonosFamilia" FunctionName="dbBarriosAbogadosModel.Store.CopiaTablaTelefonosFamilia" />
+    <FunctionImportMapping FunctionImportName="CopiaTablaUsuarios" FunctionName="dbBarriosAbogadosModel.Store.CopiaTablaUsuarios" />
+    <EntitySetMapping Name="tblAudienciasJuzgado">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblAudienciasJuzgado">
+        <MappingFragment StoreEntitySet="tblAudienciasJuzgado">
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="Fecha_Actualizado" ColumnName="Fecha_Actualizado" />
+          <ScalarProperty Name="Fecha_Subido" ColumnName="Fecha_Subido" />
+          <ScalarProperty Name="Informar_Abogado" ColumnName="Informar_Abogado" />
+          <ScalarProperty Name="Informar_Cliente" ColumnName="Informar_Cliente" />
+          <ScalarProperty Name="Nombre_Archivo" ColumnName="Nombre_Archivo" />
+          <ScalarProperty Name="Ruta" ColumnName="Ruta" />
+          <ScalarProperty Name="Adjuntar_Archivo" ColumnName="Adjuntar_Archivo" />
+          <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+          <ScalarProperty Name="Correo_Abogado" ColumnName="Correo_Abogado" />
+          <ScalarProperty Name="Abogado" ColumnName="Abogado" />
+          <ScalarProperty Name="Fecha_Audiencia" ColumnName="Fecha_Audiencia" />
+          <ScalarProperty Name="Juzgado" ColumnName="Juzgado" />
+          <ScalarProperty Name="Numero_Proceso" ColumnName="Numero_Proceso" />
+          <ScalarProperty Name="SegundoApellido" ColumnName="SegundoApellido" />
+          <ScalarProperty Name="Primer_Apellido" ColumnName="Primer_Apellido" />
+          <ScalarProperty Name="Segundo_Nombre" ColumnName="Segundo_Nombre" />
+          <ScalarProperty Name="Primer_Nombre" ColumnName="Primer_Nombre" />
+          <ScalarProperty Name="Doc_Cliente" ColumnName="Doc_Cliente" />
+          <ScalarProperty Name="id_Audiencia_Juzgado" ColumnName="id_Audiencia_Juzgado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblAudienciasProcuraduria">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblAudienciasProcuraduria">
+        <MappingFragment StoreEntitySet="tblAudienciasProcuraduria">
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="Fecha_Actualizado" ColumnName="Fecha_Actualizado" />
+          <ScalarProperty Name="Fecha_Subido" ColumnName="Fecha_Subido" />
+          <ScalarProperty Name="Informar_Abogado" ColumnName="Informar_Abogado" />
+          <ScalarProperty Name="Informar_Cliente" ColumnName="Informar_Cliente" />
+          <ScalarProperty Name="Nombre_Archivo" ColumnName="Nombre_Archivo" />
+          <ScalarProperty Name="Ruta" ColumnName="Ruta" />
+          <ScalarProperty Name="Adjuntar_Archivo" ColumnName="Adjuntar_Archivo" />
+          <ScalarProperty Name="Observaciones" ColumnName="Observaciones" />
+          <ScalarProperty Name="Correo_Abogado" ColumnName="Correo_Abogado" />
+          <ScalarProperty Name="Abogado" ColumnName="Abogado" />
+          <ScalarProperty Name="Fecha_Audiencia" ColumnName="Fecha_Audiencia" />
+          <ScalarProperty Name="Procuraduria" ColumnName="Procuraduria" />
+          <ScalarProperty Name="Numero_Proceso" ColumnName="Numero_Proceso" />
+          <ScalarProperty Name="SegundoApellido" ColumnName="SegundoApellido" />
+          <ScalarProperty Name="Primer_Apellido" ColumnName="Primer_Apellido" />
+          <ScalarProperty Name="Segundo_Nombre" ColumnName="Segundo_Nombre" />
+          <ScalarProperty Name="Primer_Nombre" ColumnName="Primer_Nombre" />
+          <ScalarProperty Name="Doc_Cliente" ColumnName="Doc_Cliente" />
+          <ScalarProperty Name="id_Audiencia_Procuraduria" ColumnName="id_Audiencia_Procuraduria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblAreas">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblAreas">
+        <MappingFragment StoreEntitySet="tblAreas">
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Nombre_Area" ColumnName="Nombre_Area" />
+          <ScalarProperty Name="id_Area" ColumnName="id_Area" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblAreasTareas">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblAreasTareas">
+        <MappingFragment StoreEntitySet="tblAreasTareas">
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Dias" ColumnName="Dias" />
+          <ScalarProperty Name="Tarea" ColumnName="Tarea" />
+          <ScalarProperty Name="Tipo_Tarea" ColumnName="Tipo_Tarea" />
+          <ScalarProperty Name="Area" ColumnName="Area" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblEstadosTarea">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblEstadosTarea">
+        <MappingFragment StoreEntitySet="tblEstadosTarea">
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Nombre_Estado" ColumnName="Nombre_Estado" />
+          <ScalarProperty Name="id_Tarea" ColumnName="id_Tarea" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblPrioridad">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblPrioridad">
+        <MappingFragment StoreEntitySet="tblPrioridad">
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Prioridad" ColumnName="Prioridad" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblRegistrarSeguimiento">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblRegistrarSeguimiento">
+        <MappingFragment StoreEntitySet="tblRegistrarSeguimiento">
+          <ScalarProperty Name="Usuario_Seguimiento" ColumnName="Usuario_Seguimiento" />
+          <ScalarProperty Name="Fecha_Seguimiento" ColumnName="Fecha_Seguimiento" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Notificar_Responsable" ColumnName="Notificar_Responsable" />
+          <ScalarProperty Name="Nombre_Archivo" ColumnName="Nombre_Archivo" />
+          <ScalarProperty Name="Ruta" ColumnName="Ruta" />
+          <ScalarProperty Name="Adjunto" ColumnName="Adjunto" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="id_Solicitud" ColumnName="id_Solicitud" />
+          <ScalarProperty Name="id_Seguimiento" ColumnName="id_Seguimiento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTarea">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblTarea">
+        <MappingFragment StoreEntitySet="tblTarea">
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Nombre_Tarea" ColumnName="Nombre_Tarea" />
+          <ScalarProperty Name="id_Tarea" ColumnName="id_Tarea" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblTipoTarea">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblTipoTarea">
+        <MappingFragment StoreEntitySet="tblTipoTarea">
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Nombre_Tipo_Tarea" ColumnName="Nombre_Tipo_Tarea" />
+          <ScalarProperty Name="id_Tipo_Tarea" ColumnName="id_Tipo_Tarea" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblUsuarioArea">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblUsuarioArea">
+        <MappingFragment StoreEntitySet="tblUsuarioArea">
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="Nombre_Area" ColumnName="Nombre_Area" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblRegistrarTareas">
+      <EntityTypeMapping TypeName="dbBarriosAbogadosModel.tblRegistrarTareas">
+        <MappingFragment StoreEntitySet="tblRegistrarTareas">
+          <ScalarProperty Name="Fecha_Actualizado" ColumnName="Fecha_Actualizado" />
+          <ScalarProperty Name="Fecha_Asignado" ColumnName="Fecha_Asignado" />
+          <ScalarProperty Name="Area_Creadora" ColumnName="Area_Creadora" />
+          <ScalarProperty Name="Notificar_Responsable" ColumnName="Notificar_Responsable" />
+          <ScalarProperty Name="Nombre_Archivo" ColumnName="Nombre_Archivo" />
+          <ScalarProperty Name="Ruta" ColumnName="Ruta" />
+          <ScalarProperty Name="Adjunto" ColumnName="Adjunto" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Prioridad" ColumnName="Prioridad" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Segundo_Apellido" ColumnName="Segundo_Apellido" />
+          <ScalarProperty Name="Primer_Apellido" ColumnName="Primer_Apellido" />
+          <ScalarProperty Name="Segundo_Nombre" ColumnName="Segundo_Nombre" />
+          <ScalarProperty Name="Primer_Nombre" ColumnName="Primer_Nombre" />
+          <ScalarProperty Name="Doc_Cliente" ColumnName="Doc_Cliente" />
+          <ScalarProperty Name="Responsable" ColumnName="Responsable" />
+          <ScalarProperty Name="Creador" ColumnName="Creador" />
+          <ScalarProperty Name="id_Tarea" ColumnName="id_Tarea" />
+          <ScalarProperty Name="id_Solicitud" ColumnName="id_Solicitud" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

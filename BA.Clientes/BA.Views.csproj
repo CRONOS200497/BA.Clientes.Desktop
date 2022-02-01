@@ -1,0 +1,657 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EF6E6ED7-6D5D-498C-9383-BFF8CF518ADF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BA.Clientes</RootNamespace>
+    <AssemblyName>BA.Clientes</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\andre\Desktop\Instalador\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>5E7E1BC27F9F0F9C8E4A41BE3E09911EF94B0701</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Ba.BarriosAbogados.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EASendMail, Version=7.7.0.5, Culture=neutral, PublicKeyToken=88adb80ecd66540b, processorArchitecture=MSIL">
+      <HintPath>..\packages\EASendMail.7.7.0.5\lib\net45\EASendMail.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic">
+      <HintPath>..\packages\VisualBasic.PowerPacks.Vs.1.0.0\lib\Microsoft.VisualBasic.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\VisualBasic.PowerPacks.Vs.1.0.0\lib\Microsoft.VisualBasic.PowerPacks.Vs.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Formularios\AgendaFamilia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\AgendaFamilia.Designer.cs">
+      <DependentUpon>AgendaFamilia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\AgendaClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\AgendaClientes.Designer.cs">
+      <DependentUpon>AgendaClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\AgregarAudienciaProcuraduria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\AgregarAudienciaProcuraduria.Designer.cs">
+      <DependentUpon>AgregarAudienciaProcuraduria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\AgregarAudienciaJuzgado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\AgregarAudienciaJuzgado.Designer.cs">
+      <DependentUpon>AgregarAudienciaJuzgado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\AudienciasProcuraduria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\AudienciasProcuraduria.Designer.cs">
+      <DependentUpon>AudienciasProcuraduria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\AudienciasJuzgado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\AudienciasJuzgado.Designer.cs">
+      <DependentUpon>AudienciasJuzgado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Dispensarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Dispensarios.Designer.cs">
+      <DependentUpon>Dispensarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Batallones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Batallones.Designer.cs">
+      <DependentUpon>Batallones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\CargarDocumentoNuevoFamilia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\CargarDocumentoNuevoFamilia.Designer.cs">
+      <DependentUpon>CargarDocumentoNuevoFamilia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cartera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cartera.Designer.cs">
+      <DependentUpon>Cartera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\CitasMedicas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\CitasMedicas.Designer.cs">
+      <DependentUpon>CitasMedicas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\DocumentosFamilia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\DocumentosFamilia.Designer.cs">
+      <DependentUpon>DocumentosFamilia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\HistorialSeguimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\HistorialSeguimientos.Designer.cs">
+      <DependentUpon>HistorialSeguimientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\JuntasMedicas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\JuntasMedicas.Designer.cs">
+      <DependentUpon>JuntasMedicas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ConceptosMedicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ConceptosMedicos.Designer.cs">
+      <DependentUpon>ConceptosMedicos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FichasMedicas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FichasMedicas.Designer.cs">
+      <DependentUpon>FichasMedicas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\IniciarSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\IniciarSesion.designer.cs">
+      <DependentUpon>IniciarSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ModificarDocumentoFamilia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ModificarDocumentoFamilia.Designer.cs">
+      <DependentUpon>ModificarDocumentoFamilia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ModificarDocumento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ModificarDocumento.Designer.cs">
+      <DependentUpon>ModificarDocumento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\CargarDocumentoNuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\CargarDocumentoNuevo.Designer.cs">
+      <DependentUpon>CargarDocumentoNuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\DocumentosCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\DocumentosCliente.Designer.cs">
+      <DependentUpon>DocumentosCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\GestionFamiliares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\GestionFamiliares.Designer.cs">
+      <DependentUpon>GestionFamiliares.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\GestionClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\GestionClientes.Designer.cs">
+      <DependentUpon>GestionClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ModificarClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ModificarClientes.Designer.cs">
+      <DependentUpon>ModificarClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ModificarFamiliares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ModificarFamiliares.Designer.cs">
+      <DependentUpon>ModificarFamiliares.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Parametrizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Parametrizacion.Designer.cs">
+      <DependentUpon>Parametrizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\RegistrarSeguimientoTareas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\RegistrarSeguimientoTareas.Designer.cs">
+      <DependentUpon>RegistrarSeguimientoTareas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\SeguimientoFamiliares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\SeguimientoFamiliares.Designer.cs">
+      <DependentUpon>SeguimientoFamiliares.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\SeguimientoCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\SeguimientoCliente.Designer.cs">
+      <DependentUpon>SeguimientoCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\NovedadesFamiliares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\NovedadesFamiliares.Designer.cs">
+      <DependentUpon>NovedadesFamiliares.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\NovedadesCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\NovedadesCliente.Designer.cs">
+      <DependentUpon>NovedadesCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\RegistrarFamiliares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\RegistrarFamiliares.Designer.cs">
+      <DependentUpon>RegistrarFamiliares.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\RegistrarClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\RegistrarClientes.Designer.cs">
+      <DependentUpon>RegistrarClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Tareas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Tareas.Designer.cs">
+      <DependentUpon>Tareas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\VerDocumentosSeguimientosTareas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\VerDocumentosSeguimientosTareas.Designer.cs">
+      <DependentUpon>VerDocumentosSeguimientosTareas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\VerDocumentosRegistroTarea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\VerDocumentosRegistroTarea.Designer.cs">
+      <DependentUpon>VerDocumentosRegistroTarea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\VerDocumentosAudienciasProcuraduria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\VerDocumentosAudienciasProcuraduria.Designer.cs">
+      <DependentUpon>VerDocumentosAudienciasProcuraduria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\VerDocumentosCitasMedicas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\VerDocumentosCitasMedicas.Designer.cs">
+      <DependentUpon>VerDocumentosCitasMedicas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\VerDocumentosCartera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\VerDocumentosCartera.Designer.cs">
+      <DependentUpon>VerDocumentosCartera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\VerDocumentosAudiencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\VerDocumentosAudiencias.Designer.cs">
+      <DependentUpon>VerDocumentosAudiencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\VerDocumentosConceptos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\VerDocumentosConceptos.Designer.cs">
+      <DependentUpon>VerDocumentosConceptos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\VerDocumentosJuntas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\VerDocumentosJuntas.Designer.cs">
+      <DependentUpon>VerDocumentosJuntas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\VerDocumentosSeguimientoFamilia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\VerDocumentosSeguimientoFamilia.Designer.cs">
+      <DependentUpon>VerDocumentosSeguimientoFamilia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\VerDocumentosFichas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\VerDocumentosFichas.Designer.cs">
+      <DependentUpon>VerDocumentosFichas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\VerDocumentosSeguimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\VerDocumentosSeguimientos.Designer.cs">
+      <DependentUpon>VerDocumentosSeguimientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\VerDocumentosNovedadesFamilia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\VerDocumentosNovedadesFamilia.Designer.cs">
+      <DependentUpon>VerDocumentosNovedadesFamilia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\VerDocumentosNovedades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\VerDocumentosNovedades.Designer.cs">
+      <DependentUpon>VerDocumentosNovedades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\VerDocumentosFamilia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\VerDocumentosFamilia.Designer.cs">
+      <DependentUpon>VerDocumentosFamilia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\VerDocumentosClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\VerDocumentosClientes.Designer.cs">
+      <DependentUpon>VerDocumentosClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\AgendaFamilia.resx">
+      <DependentUpon>AgendaFamilia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\AgendaClientes.resx">
+      <DependentUpon>AgendaClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\AgregarAudienciaProcuraduria.resx">
+      <DependentUpon>AgregarAudienciaProcuraduria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\AgregarAudienciaJuzgado.resx">
+      <DependentUpon>AgregarAudienciaJuzgado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\AudienciasProcuraduria.resx">
+      <DependentUpon>AudienciasProcuraduria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\AudienciasJuzgado.resx">
+      <DependentUpon>AudienciasJuzgado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Dispensarios.resx">
+      <DependentUpon>Dispensarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Batallones.resx">
+      <DependentUpon>Batallones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\CargarDocumentoNuevoFamilia.resx">
+      <DependentUpon>CargarDocumentoNuevoFamilia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cartera.resx">
+      <DependentUpon>Cartera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\CitasMedicas.resx">
+      <DependentUpon>CitasMedicas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\DocumentosFamilia.resx">
+      <DependentUpon>DocumentosFamilia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\HistorialSeguimientos.resx">
+      <DependentUpon>HistorialSeguimientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\JuntasMedicas.resx">
+      <DependentUpon>JuntasMedicas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ConceptosMedicos.resx">
+      <DependentUpon>ConceptosMedicos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FichasMedicas.resx">
+      <DependentUpon>FichasMedicas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\IniciarSesion.resx">
+      <DependentUpon>IniciarSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ModificarDocumentoFamilia.resx">
+      <DependentUpon>ModificarDocumentoFamilia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ModificarDocumento.resx">
+      <DependentUpon>ModificarDocumento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\CargarDocumentoNuevo.resx">
+      <DependentUpon>CargarDocumentoNuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\DocumentosCliente.resx">
+      <DependentUpon>DocumentosCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\GestionFamiliares.resx">
+      <DependentUpon>GestionFamiliares.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\GestionClientes.resx">
+      <DependentUpon>GestionClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ModificarClientes.resx">
+      <DependentUpon>ModificarClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ModificarFamiliares.resx">
+      <DependentUpon>ModificarFamiliares.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Parametrizacion.resx">
+      <DependentUpon>Parametrizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\RegistrarSeguimientoTareas.resx">
+      <DependentUpon>RegistrarSeguimientoTareas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\SeguimientoFamiliares.resx">
+      <DependentUpon>SeguimientoFamiliares.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\SeguimientoCliente.resx">
+      <DependentUpon>SeguimientoCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\NovedadesFamiliares.resx">
+      <DependentUpon>NovedadesFamiliares.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\NovedadesCliente.resx">
+      <DependentUpon>NovedadesCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\RegistrarFamiliares.resx">
+      <DependentUpon>RegistrarFamiliares.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\RegistrarClientes.resx">
+      <DependentUpon>RegistrarClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Tareas.resx">
+      <DependentUpon>Tareas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\VerDocumentosSeguimientosTareas.resx">
+      <DependentUpon>VerDocumentosSeguimientosTareas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\VerDocumentosRegistroTarea.resx">
+      <DependentUpon>VerDocumentosRegistroTarea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\VerDocumentosAudienciasProcuraduria.resx">
+      <DependentUpon>VerDocumentosAudienciasProcuraduria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\VerDocumentosCitasMedicas.resx">
+      <DependentUpon>VerDocumentosCitasMedicas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\VerDocumentosCartera.resx">
+      <DependentUpon>VerDocumentosCartera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\VerDocumentosAudiencias.resx">
+      <DependentUpon>VerDocumentosAudiencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\VerDocumentosConceptos.resx">
+      <DependentUpon>VerDocumentosConceptos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\VerDocumentosJuntas.resx">
+      <DependentUpon>VerDocumentosJuntas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\VerDocumentosSeguimientoFamilia.resx">
+      <DependentUpon>VerDocumentosSeguimientoFamilia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\VerDocumentosFichas.resx">
+      <DependentUpon>VerDocumentosFichas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\VerDocumentosSeguimientos.resx">
+      <DependentUpon>VerDocumentosSeguimientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\VerDocumentosNovedadesFamilia.resx">
+      <DependentUpon>VerDocumentosNovedadesFamilia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\VerDocumentosNovedades.resx">
+      <DependentUpon>VerDocumentosNovedades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\VerDocumentosFamilia.resx">
+      <DependentUpon>VerDocumentosFamilia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\VerDocumentosClientes.resx">
+      <DependentUpon>VerDocumentosClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Ba.BarriosAbogados.pfx" />
+    <None Include="BA.Views_ClaveTemporal.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\BA.Models.Models.tblTipoDocumento.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Imagenes\barrios-abogados-logo.png" />
+    <Content Include="Imagenes\Fondo_forms.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BA.Controllers\BA.Controllers.csproj">
+      <Project>{5077575c-3692-4b8f-b8c2-c4aaff262d9d}</Project>
+      <Name>BA.Controllers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BA.Correos\BA.Correos.csproj">
+      <Project>{214fc818-0892-46aa-87a1-4044cf8eebc5}</Project>
+      <Name>BA.Correos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BA.Models\BA.Models.csproj">
+      <Project>{b3e2e8b5-5c06-492d-9b40-e831e0a7e12a}</Project>
+      <Name>BA.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

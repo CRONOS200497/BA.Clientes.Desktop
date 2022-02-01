@@ -1,0 +1,980 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbBarriosAbogadosModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tblDepartamentos">
+    <Key>
+      <PropertyRef Name="id_Departamento" />
+    </Key>
+    <Property Name="id_Departamento" Type="Int32" Nullable="false" />
+    <Property Name="Nombre_Departamento" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="tblCiudades" Relationship="Self.FK_tblCiudades_tblDepartamentos" FromRole="tblDepartamentos" ToRole="tblCiudades" />
+  </EntityType>
+  <EntityType Name="tblDocumentosClientes">
+    <Key>
+      <PropertyRef Name="id_documento" />
+    </Key>
+    <Property Name="id_documento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Documento" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="estado" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblDocumentosFamilia">
+    <Key>
+      <PropertyRef Name="id_documento_Familia" />
+    </Key>
+    <Property Name="id_documento_Familia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Documento_Familia" Type="String" MaxLength="75" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Estado" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblDocumentosNovedades">
+    <Key>
+      <PropertyRef Name="id_Documento_Novedad" />
+    </Key>
+    <Property Name="id_Documento_Novedad" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Documento_Novedad" Type="String" MaxLength="75" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="estado" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblEstadosProcesos">
+    <Key>
+      <PropertyRef Name="id_Estado_Proceso" />
+    </Key>
+    <Property Name="id_Estado_Proceso" Type="Int32" Nullable="false" />
+    <Property Name="Nombre_Estado_Proceso" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Cantidad_Dias_Minimos" Type="Int32" Nullable="false" />
+    <Property Name="Cantidad_Dias_Maximos" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblEtapasProceso">
+    <Key>
+      <PropertyRef Name="id_EtapasProceso" />
+    </Key>
+    <Property Name="id_EtapasProceso" Type="Int32" Nullable="false" />
+    <Property Name="Nombre_EtapasProceso" Type="String" MaxLength="75" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblFuerza">
+    <Key>
+      <PropertyRef Name="id_Fuerza" />
+    </Key>
+    <Property Name="id_Fuerza" Type="Int32" Nullable="false" />
+    <Property Name="Nombre_Fuerza" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="tblGrados" Relationship="Self.FK_tblGrados_tblFuerza" FromRole="tblFuerza" ToRole="tblGrados" />
+  </EntityType>
+  <EntityType Name="tblGrados">
+    <Key>
+      <PropertyRef Name="id_grado" />
+    </Key>
+    <Property Name="id_grado" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Rago" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="id_fuerza" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tblFuerza" Relationship="Self.FK_tblGrados_tblFuerza" FromRole="tblGrados" ToRole="tblFuerza" />
+  </EntityType>
+  <EntityType Name="tblRedesSociales">
+    <Key>
+      <PropertyRef Name="id_RedSocial" />
+    </Key>
+    <Property Name="id_RedSocial" Type="Int32" Nullable="false" />
+    <Property Name="Nombre_Red_Social" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblTipoDocumento">
+    <Key>
+      <PropertyRef Name="id_Tipo_Documento" />
+    </Key>
+    <Property Name="id_Tipo_Documento" Type="Int32" Nullable="false" />
+    <Property Name="Nombre_Tipo_Documento" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Sigla" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblTipoFamiliar">
+    <Key>
+      <PropertyRef Name="id_Tipo_Familiar" />
+    </Key>
+    <Property Name="id_Tipo_Familiar" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblTipoRegistro">
+    <Key>
+      <PropertyRef Name="id_Tipo_Registro" />
+    </Key>
+    <Property Name="id_Tipo_Registro" Type="Int32" Nullable="false" />
+    <Property Name="Nombre_Tipo_Registro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblTitulosValores">
+    <Key>
+      <PropertyRef Name="id_Titulos_Valores" />
+    </Key>
+    <Property Name="id_Titulos_Valores" Type="Int32" Nullable="false" />
+    <Property Name="Nombre_Titulo_Valor" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblCiudades">
+    <Key>
+      <PropertyRef Name="id_Ciudad" />
+      <PropertyRef Name="Nombre_Ciudad" />
+      <PropertyRef Name="id_Departamento" />
+    </Key>
+    <Property Name="id_Ciudad" Type="Int32" Nullable="false" />
+    <Property Name="Nombre_Ciudad" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="id_Departamento" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tblDepartamentos" Relationship="Self.FK_tblCiudades_tblDepartamentos" FromRole="tblCiudades" ToRole="tblDepartamentos" />
+  </EntityType>
+  <Association Name="FK_tblCiudades_tblDepartamentos">
+    <End Role="tblDepartamentos" Type="Self.tblDepartamentos" Multiplicity="1" />
+    <End Role="tblCiudades" Type="Self.tblCiudades" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblDepartamentos">
+        <PropertyRef Name="id_Departamento" />
+      </Principal>
+      <Dependent Role="tblCiudades">
+        <PropertyRef Name="id_Departamento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblGrados_tblFuerza">
+    <End Role="tblFuerza" Type="Self.tblFuerza" Multiplicity="1" />
+    <End Role="tblGrados" Type="Self.tblGrados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblFuerza">
+        <PropertyRef Name="id_Fuerza" />
+      </Principal>
+      <Dependent Role="tblGrados">
+        <PropertyRef Name="id_fuerza" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="dbBarriosAbogadosEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblDepartamentos" EntityType="Self.tblDepartamentos" />
+    <EntitySet Name="tblDocumentosClientes" EntityType="Self.tblDocumentosClientes" />
+    <EntitySet Name="tblDocumentosFamilia" EntityType="Self.tblDocumentosFamilia" />
+    <EntitySet Name="tblDocumentosNovedades" EntityType="Self.tblDocumentosNovedades" />
+    <EntitySet Name="tblEstadosProcesos" EntityType="Self.tblEstadosProcesos" />
+    <EntitySet Name="tblEtapasProceso" EntityType="Self.tblEtapasProceso" />
+    <EntitySet Name="tblFuerza" EntityType="Self.tblFuerza" />
+    <EntitySet Name="tblGrados" EntityType="Self.tblGrados" />
+    <EntitySet Name="tblRedesSociales" EntityType="Self.tblRedesSociales" />
+    <EntitySet Name="tblTipoDocumento" EntityType="Self.tblTipoDocumento" />
+    <EntitySet Name="tblTipoFamiliar" EntityType="Self.tblTipoFamiliar" />
+    <EntitySet Name="tblTipoRegistro" EntityType="Self.tblTipoRegistro" />
+    <EntitySet Name="tblTitulosValores" EntityType="Self.tblTitulosValores" />
+    <EntitySet Name="tblCiudades" EntityType="Self.tblCiudades" />
+    <AssociationSet Name="FK_tblCiudades_tblDepartamentos" Association="Self.FK_tblCiudades_tblDepartamentos">
+      <End Role="tblDepartamentos" EntitySet="tblDepartamentos" />
+      <End Role="tblCiudades" EntitySet="tblCiudades" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblGrados_tblFuerza" Association="Self.FK_tblGrados_tblFuerza">
+      <End Role="tblFuerza" EntitySet="tblFuerza" />
+      <End Role="tblGrados" EntitySet="tblGrados" />
+    </AssociationSet>
+    <EntitySet Name="tblFamilia" EntityType="dbBarriosAbogadosModel.tblFamilia" />
+    <EntitySet Name="tblParametros" EntityType="dbBarriosAbogadosModel.tblParametros" />
+    <EntitySet Name="tblDocumentosCargados" EntityType="dbBarriosAbogadosModel.tblDocumentosCargados" />
+    <EntitySet Name="tblDocumentosCargadosFamilia" EntityType="dbBarriosAbogadosModel.tblDocumentosCargadosFamilia" />
+    <EntitySet Name="tblPerfiles" EntityType="dbBarriosAbogadosModel.tblPerfiles" />
+    <EntitySet Name="tblRoles" EntityType="dbBarriosAbogadosModel.tblRoles" />
+    <EntitySet Name="tblUsuarios" EntityType="dbBarriosAbogadosModel.tblUsuarios" />
+    <EntitySet Name="tblTiposSeguimientos" EntityType="dbBarriosAbogadosModel.tblTiposSeguimientos" />
+    <EntitySet Name="tblNovedades" EntityType="dbBarriosAbogadosModel.tblNovedades" />
+    <EntitySet Name="tblNovedadesFamilia" EntityType="dbBarriosAbogadosModel.tblNovedadesFamilia" />
+    <EntitySet Name="tblSeguimientoCliente" EntityType="dbBarriosAbogadosModel.tblSeguimientoCliente" />
+    <EntitySet Name="tblSeguimientoFamiliar" EntityType="dbBarriosAbogadosModel.tblSeguimientoFamiliar" />
+    <EntitySet Name="tblConceptos" EntityType="dbBarriosAbogadosModel.tblConceptos" />
+    <EntitySet Name="tblEstadosCitasMedicas" EntityType="dbBarriosAbogadosModel.tblEstadosCitasMedicas" />
+    <EntitySet Name="tblEstadosConceptos" EntityType="dbBarriosAbogadosModel.tblEstadosConceptos" />
+    <EntitySet Name="tblEstadosFichasMedicas" EntityType="dbBarriosAbogadosModel.tblEstadosFichasMedicas" />
+    <EntitySet Name="tblEstadosJuntasMedicas" EntityType="dbBarriosAbogadosModel.tblEstadosJuntasMedicas" />
+    <EntitySet Name="tblConceptosMedicos" EntityType="dbBarriosAbogadosModel.tblConceptosMedicos" />
+    <EntitySet Name="tblFichasMedicas" EntityType="dbBarriosAbogadosModel.tblFichasMedicas" />
+    <EntitySet Name="tblJuntasMedicas" EntityType="dbBarriosAbogadosModel.tblJuntasMedicas" />
+    <EntitySet Name="tblCitasMedicas" EntityType="dbBarriosAbogadosModel.tblCitasMedicas" />
+    <EntitySet Name="tblEstadosCuentas" EntityType="dbBarriosAbogadosModel.tblEstadosCuentas" />
+    <EntitySet Name="tblCartera" EntityType="dbBarriosAbogadosModel.tblCartera" />
+    <EntitySet Name="tblClientes" EntityType="dbBarriosAbogadosModel.tblClientes" />
+    <EntitySet Name="tblCorreosClientes" EntityType="dbBarriosAbogadosModel.tblCorreosClientes" />
+    <EntitySet Name="tblTelefonosClientes" EntityType="dbBarriosAbogadosModel.tblTelefonosClientes" />
+    <EntitySet Name="tblCorreosFamilia" EntityType="dbBarriosAbogadosModel.tblCorreosFamilia" />
+    <EntitySet Name="tblTelefonosFamilia" EntityType="dbBarriosAbogadosModel.tblTelefonosFamilia" />
+    <EntitySet Name="tblAbogados" EntityType="dbBarriosAbogadosModel.tblAbogados" />
+    <EntitySet Name="tblJuzgados" EntityType="dbBarriosAbogadosModel.tblJuzgados" />
+    <EntitySet Name="tblProcuradurias" EntityType="dbBarriosAbogadosModel.tblProcuradurias" />
+    <EntitySet Name="tblBatallones" EntityType="dbBarriosAbogadosModel.tblBatallones" />
+    <EntitySet Name="tblDispensarios" EntityType="dbBarriosAbogadosModel.tblDispensarios" />
+    <FunctionImport Name="CopiaTablaClientes">
+      <Parameter Name="Numero_Documento" Mode="In" Type="String" />
+      <Parameter Name="Usuario" Mode="In" Type="String" />
+      <Parameter Name="Accion" Mode="In" Type="String" />
+      <Parameter Name="Fecha_Accion" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="CopiaTablaFamilia">
+      <Parameter Name="Numero_Documento" Mode="In" Type="String" />
+      <Parameter Name="Usuario" Mode="In" Type="String" />
+      <Parameter Name="Accion" Mode="In" Type="String" />
+      <Parameter Name="Fecha_Accion" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="CopiaTablaAudienciasJuzgado">
+      <Parameter Name="id_Audiencia" Mode="In" Type="Int32" />
+      <Parameter Name="Numero_Documento" Mode="In" Type="String" />
+      <Parameter Name="Usuario" Mode="In" Type="String" />
+      <Parameter Name="Accion" Mode="In" Type="String" />
+      <Parameter Name="Fecha_Accion" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="CopiaTablaAudienciasProcuraduria">
+      <Parameter Name="id_Audiencia" Mode="In" Type="Int32" />
+      <Parameter Name="Numero_Documento" Mode="In" Type="String" />
+      <Parameter Name="Usuario" Mode="In" Type="String" />
+      <Parameter Name="Accion" Mode="In" Type="String" />
+      <Parameter Name="Fecha_Accion" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="CopiaTablaCitasMedicas">
+      <Parameter Name="id_Cita" Mode="In" Type="Int32" />
+      <Parameter Name="Numero_Documento" Mode="In" Type="String" />
+      <Parameter Name="Usuario" Mode="In" Type="String" />
+      <Parameter Name="Accion" Mode="In" Type="String" />
+      <Parameter Name="Fecha_Accion" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="CopiaTablaConceptosMedicos">
+      <Parameter Name="id_Concepto" Mode="In" Type="Int32" />
+      <Parameter Name="Numero_Documento" Mode="In" Type="String" />
+      <Parameter Name="Usuario" Mode="In" Type="String" />
+      <Parameter Name="Accion" Mode="In" Type="String" />
+      <Parameter Name="Fecha_Accion" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="CopiaTablaCorreosClientes">
+      <Parameter Name="id_Correo" Mode="In" Type="Int32" />
+      <Parameter Name="Numero_Documento" Mode="In" Type="String" />
+      <Parameter Name="Usuario" Mode="In" Type="String" />
+      <Parameter Name="Accion" Mode="In" Type="String" />
+      <Parameter Name="Fecha_Accion" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="CopiaTablaCorreosFamilia">
+      <Parameter Name="id_Correo" Mode="In" Type="Int32" />
+      <Parameter Name="Numero_Documento" Mode="In" Type="String" />
+      <Parameter Name="Usuario" Mode="In" Type="String" />
+      <Parameter Name="Accion" Mode="In" Type="String" />
+      <Parameter Name="Fecha_Accion" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="CopiaTablaDocumentosCargados">
+      <Parameter Name="id_Archivo" Mode="In" Type="Int32" />
+      <Parameter Name="Numero_Documento" Mode="In" Type="String" />
+      <Parameter Name="Usuario" Mode="In" Type="String" />
+      <Parameter Name="Accion" Mode="In" Type="String" />
+      <Parameter Name="Fecha_Accion" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="CopiaTablaDocumentosCargadosFamilia">
+      <Parameter Name="id_Archivo" Mode="In" Type="Int32" />
+      <Parameter Name="Numero_Documento" Mode="In" Type="String" />
+      <Parameter Name="Usuario" Mode="In" Type="String" />
+      <Parameter Name="Accion" Mode="In" Type="String" />
+      <Parameter Name="Fecha_Accion" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="CopiaTablaFichasMedicas">
+      <Parameter Name="id_Ficha" Mode="In" Type="Int32" />
+      <Parameter Name="Numero_Documento" Mode="In" Type="String" />
+      <Parameter Name="Usuario" Mode="In" Type="String" />
+      <Parameter Name="Accion" Mode="In" Type="String" />
+      <Parameter Name="Fecha_Accion" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="CopiaTablaJuntasMedicas">
+      <Parameter Name="id_Junta" Mode="In" Type="Int32" />
+      <Parameter Name="Numero_Documento" Mode="In" Type="String" />
+      <Parameter Name="Usuario" Mode="In" Type="String" />
+      <Parameter Name="Accion" Mode="In" Type="String" />
+      <Parameter Name="Fecha_Accion" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="CopiaTablaNovedades">
+      <Parameter Name="id_Novedad" Mode="In" Type="Int32" />
+      <Parameter Name="Numero_Documento" Mode="In" Type="String" />
+      <Parameter Name="Usuario" Mode="In" Type="String" />
+      <Parameter Name="Accion" Mode="In" Type="String" />
+      <Parameter Name="Fecha_Accion" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="CopiaTablaNovedadesFamilia">
+      <Parameter Name="id_Novedad" Mode="In" Type="Int32" />
+      <Parameter Name="Numero_Documento" Mode="In" Type="String" />
+      <Parameter Name="Usuario" Mode="In" Type="String" />
+      <Parameter Name="Accion" Mode="In" Type="String" />
+      <Parameter Name="Fecha_Accion" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="CopiaTablaPerfiles">
+      <Parameter Name="id_Perfil" Mode="In" Type="Int32" />
+      <Parameter Name="Usuario" Mode="In" Type="String" />
+      <Parameter Name="Accion" Mode="In" Type="String" />
+      <Parameter Name="Fecha_Accion" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="CopiaTablaRoles">
+      <Parameter Name="id_Rol" Mode="In" Type="Int32" />
+      <Parameter Name="Usuario" Mode="In" Type="String" />
+      <Parameter Name="Accion" Mode="In" Type="String" />
+      <Parameter Name="Fecha_Accion" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="CopiaTablaSeguimientosCliente">
+      <Parameter Name="id_Seguimiento" Mode="In" Type="Int32" />
+      <Parameter Name="Numero_Documento" Mode="In" Type="String" />
+      <Parameter Name="Usuario" Mode="In" Type="String" />
+      <Parameter Name="Accion" Mode="In" Type="String" />
+      <Parameter Name="Fecha_Accion" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="CopiaTablaSeguimientosFamiliar">
+      <Parameter Name="id_Seguimiento" Mode="In" Type="Int32" />
+      <Parameter Name="Numero_Documento" Mode="In" Type="String" />
+      <Parameter Name="Usuario" Mode="In" Type="String" />
+      <Parameter Name="Accion" Mode="In" Type="String" />
+      <Parameter Name="Fecha_Accion" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="CopiaTablaTelefonosClientes">
+      <Parameter Name="id_Telefono" Mode="In" Type="Int32" />
+      <Parameter Name="Numero_Documento" Mode="In" Type="String" />
+      <Parameter Name="Usuario" Mode="In" Type="String" />
+      <Parameter Name="Accion" Mode="In" Type="String" />
+      <Parameter Name="Fecha_Accion" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="CopiaTablaTelefonosFamilia">
+      <Parameter Name="id_Telefono" Mode="In" Type="Int32" />
+      <Parameter Name="Numero_Documento" Mode="In" Type="String" />
+      <Parameter Name="Usuario" Mode="In" Type="String" />
+      <Parameter Name="Accion" Mode="In" Type="String" />
+      <Parameter Name="Fecha_Accion" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="CopiaTablaUsuarios">
+      <Parameter Name="id_Usuario" Mode="In" Type="Int32" />
+      <Parameter Name="Login" Mode="In" Type="String" />
+      <Parameter Name="Usuario" Mode="In" Type="String" />
+      <Parameter Name="Accion" Mode="In" Type="String" />
+      <Parameter Name="Fecha_Accion" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <EntitySet Name="tblAudienciasJuzgado" EntityType="dbBarriosAbogadosModel.tblAudienciasJuzgado" />
+    <EntitySet Name="tblAudienciasProcuraduria" EntityType="dbBarriosAbogadosModel.tblAudienciasProcuraduria" />
+    <EntitySet Name="tblAreas" EntityType="dbBarriosAbogadosModel.tblAreas" />
+    <EntitySet Name="tblAreasTareas" EntityType="dbBarriosAbogadosModel.tblAreasTareas" />
+    <EntitySet Name="tblEstadosTarea" EntityType="dbBarriosAbogadosModel.tblEstadosTarea" />
+    <EntitySet Name="tblPrioridad" EntityType="dbBarriosAbogadosModel.tblPrioridad" />
+    <EntitySet Name="tblRegistrarSeguimiento" EntityType="dbBarriosAbogadosModel.tblRegistrarSeguimiento" />
+    <EntitySet Name="tblTarea" EntityType="dbBarriosAbogadosModel.tblTarea" />
+    <EntitySet Name="tblTipoTarea" EntityType="dbBarriosAbogadosModel.tblTipoTarea" />
+    <EntitySet Name="tblUsuarioArea" EntityType="dbBarriosAbogadosModel.tblUsuarioArea" />
+    <EntitySet Name="tblRegistrarTareas" EntityType="dbBarriosAbogadosModel.tblRegistrarTareas" />
+  </EntityContainer>
+  <EntityType Name="tblFamilia">
+    <Key>
+      <PropertyRef Name="Numero_Documento" />
+    </Key>
+    <Property Name="id_Familiar" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Numero_Documento_Cliente" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Parentesco" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Primer_Nombre" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Segundo_Nombre" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Otro_Nombre" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Primer_Apellido" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Segundo_Apellido" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Tipo_Documento" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Numero_Documento" Type="String" Nullable="false" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="Departamento_Expedicion" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Ciudad_Expedicion" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Otro_Lugar_Expedicion" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Nacimiento" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Tipo_Registro" Type="String" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Lugar_Registro" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Departamento_Registro" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Ciudad_Registro" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Otro_Lugar_Registro" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Telefono_Fijo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Telefono_Celular" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Correo" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Red_Social" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Red_Social" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Departamento_Residencia" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Ciudad_Residencia" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Otro_Lugar_Residencia" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Casa_Propia" Type="Boolean" Nullable="false" />
+    <Property Name="Direccion_Residencia" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Barrio" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Estado_Proceso" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Etapa_Proceso" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Autenticacion" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Fecha_Creacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Fecha_Actualizacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Usurio" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tblParametros">
+    <Key>
+      <PropertyRef Name="id_prametro" />
+    </Key>
+    <Property Name="id_prametro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Parametro" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblDocumentosCargados">
+    <Key>
+      <PropertyRef Name="id_Archivo" />
+    </Key>
+    <Property Name="id_Archivo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="doc_cliente" Type="String" Nullable="false" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="tipo_doc" Type="String" Nullable="false" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="nombre_archivo" Type="String" Nullable="false" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="ruta" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_subido" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="fecha_actualizado" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="informar_cliente" Type="Boolean" Nullable="false" />
+    <Property Name="usuario" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tblDocumentosCargadosFamilia">
+    <Key>
+      <PropertyRef Name="id_Archivo" />
+    </Key>
+    <Property Name="id_Archivo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="doc_cliente" Type="String" Nullable="false" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="tipo_doc" Type="String" Nullable="false" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="nombre_archivo" Type="String" Nullable="false" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="ruta" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_subido" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="fecha_actualizado" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="informar_cliente" Type="Boolean" Nullable="false" />
+    <Property Name="usuario" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tblPerfiles">
+    <Key>
+      <PropertyRef Name="id_perfil" />
+    </Key>
+    <Property Name="id_perfil" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Perfil" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblRoles">
+    <Key>
+      <PropertyRef Name="Id_Rol" />
+    </Key>
+    <Property Name="Id_Rol" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Rol" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Id_Perfil" Type="Int32" Nullable="false" />
+    <Property Name="Estado_Rol" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblUsuarios">
+    <Key>
+      <PropertyRef Name="id_Usuario" />
+    </Key>
+    <Property Name="id_Usuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Primer_Nombre" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Segundo_Nombre" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Primer_Apellido" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Segundo_Apellido" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="login" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Contrasena" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Correo" Type="String" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="perfil" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Boolean" Nullable="false" />
+    <Property Name="fecha_creado" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="tblTiposSeguimientos">
+    <Key>
+      <PropertyRef Name="Id_Tipo_Seguimiento" />
+    </Key>
+    <Property Name="Id_Tipo_Seguimiento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Tipo_Seguimiento" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tblNovedades">
+    <Key>
+      <PropertyRef Name="Id_Novedad" />
+    </Key>
+    <Property Name="Id_Novedad" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Doc_Cliente" Type="String" Nullable="false" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="Tipo_Novedad" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Adjuntar_Archivo" Type="Boolean" Nullable="false" />
+    <Property Name="Nombre_Archivo" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="Ruta" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Informar_Cliente" Type="Boolean" Nullable="false" />
+    <Property Name="Fecha_Subido" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Fecha_Modificado" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Usuario" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tblNovedadesFamilia">
+    <Key>
+      <PropertyRef Name="Id_Novedad" />
+    </Key>
+    <Property Name="Id_Novedad" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Doc_Familiar" Type="String" Nullable="false" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="Tipo_Novedad" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Adjuntar_Archivo" Type="Boolean" Nullable="false" />
+    <Property Name="Nombre_Archivo" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="Ruta" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Informar_Cliente" Type="Boolean" Nullable="false" />
+    <Property Name="Fecha_Subido" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Fecha_Modificado" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Usuario" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tblSeguimientoCliente">
+    <Key>
+      <PropertyRef Name="ID_Seguimiento" />
+    </Key>
+    <Property Name="ID_Seguimiento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Doc_Cliente" Type="String" Nullable="false" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="Tipo_Seguimiento" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Adjuntar_Archivo" Type="Boolean" Nullable="false" />
+    <Property Name="Nombre_Archivo" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="Ruta" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Informar_Cliente" Type="Boolean" Nullable="false" />
+    <Property Name="Fecha_Seguimiento" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Fecha_Modificado" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Usuario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tblSeguimientoFamiliar">
+    <Key>
+      <PropertyRef Name="ID_Seguimiento" />
+    </Key>
+    <Property Name="ID_Seguimiento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Doc_Familiar" Type="String" Nullable="false" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="Tipo_Seguimiento" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Adjuntar_Archivo" Type="Boolean" Nullable="false" />
+    <Property Name="Nombre_Archivo" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="Ruta" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Informar_Cliente" Type="Boolean" Nullable="false" />
+    <Property Name="Fecha_Seguimiento" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Fecha_Modificado" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Usuario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tblConceptos">
+    <Key>
+      <PropertyRef Name="id_Concepto" />
+    </Key>
+    <Property Name="id_Concepto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Concepto" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblEstadosCitasMedicas">
+    <Key>
+      <PropertyRef Name="id_Estado_Cita_Medica" />
+    </Key>
+    <Property Name="id_Estado_Cita_Medica" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Estado" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblEstadosConceptos">
+    <Key>
+      <PropertyRef Name="id_Estado_Concepto" />
+    </Key>
+    <Property Name="id_Estado_Concepto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Estado" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblEstadosFichasMedicas">
+    <Key>
+      <PropertyRef Name="id_Estado_Ficha_Medica" />
+    </Key>
+    <Property Name="id_Estado_Ficha_Medica" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Estado" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Fuerza" Type="Int32" Nullable="false" />
+    <Property Name="Estado" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblEstadosJuntasMedicas">
+    <Key>
+      <PropertyRef Name="id_Estado_Junta_Medica" />
+    </Key>
+    <Property Name="id_Estado_Junta_Medica" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Estado" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Fuerza" Type="Int32" Nullable="false" />
+    <Property Name="Estado" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblConceptosMedicos">
+    <Key>
+      <PropertyRef Name="id_Concepto" />
+    </Key>
+    <Property Name="id_Concepto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Doc_Cliente" Type="String" Nullable="false" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="Fuerza" Type="String" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Tipo_Concepto" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Emision" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Dispensario" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Departamento" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Ciudad" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Otro_Lugar" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Adjuntar_Documento" Type="Boolean" Nullable="false" />
+    <Property Name="Nombre_Archivo" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="Ruta" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Estado_Concepto" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Informar_Cliente" Type="Boolean" Nullable="false" />
+    <Property Name="Observaciones" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Cargado" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Fecha_Modificado" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Usuario" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tblFichasMedicas">
+    <Key>
+      <PropertyRef Name="id_Ficha" />
+    </Key>
+    <Property Name="id_Ficha" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Doc_Cliente" Type="String" Nullable="false" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="Fuerza" Type="String" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Estado_Ficha_Medica" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Dispensario" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Departamento" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Ciudad" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Otro_Lugar" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Salida" Type="DateTime" Precision="0" />
+    <Property Name="Adjuntar_Documento" Type="Boolean" Nullable="false" />
+    <Property Name="Nombre_Archivo" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="Ruta" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Informar_Cliente" Type="Boolean" Nullable="false" />
+    <Property Name="Observaciones" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Cargado" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Fecha_Modificado" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Usuario" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tblJuntasMedicas">
+    <Key>
+      <PropertyRef Name="id_Junta" />
+    </Key>
+    <Property Name="id_Junta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Doc_Cliente" Type="String" Nullable="false" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="Fuerza" Type="String" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Junta" Type="DateTime" Precision="3" />
+    <Property Name="Estado_Junta_Medica" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Dispensario" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Departamento" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Ciudad" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Otro_Lugar" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Direccion" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Adjuntar_Documento" Type="Boolean" Nullable="false" />
+    <Property Name="Nombre_Archivo" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="Ruta" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Informar_Cliente" Type="Boolean" Nullable="false" />
+    <Property Name="Observaciones" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Cargado" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Fecha_Modificado" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Usuario" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tblCitasMedicas">
+    <Key>
+      <PropertyRef Name="id_Cita" />
+    </Key>
+    <Property Name="id_Cita" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_Concepto" Type="Int32" Nullable="false" />
+    <Property Name="Doc_Cliente" Type="String" Nullable="false" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="Fuerza" Type="String" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Tipo_Cita" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Cita" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Dispensario" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Doctor" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Departamento" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Ciudad" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Otro_Lugar" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Adjuntar_Documento" Type="Boolean" Nullable="false" />
+    <Property Name="Nombre_Archivo" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="Ruta" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Estado_Cita" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Informar_Cliente" Type="Boolean" Nullable="false" />
+    <Property Name="Observaciones" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Cargado" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Fecha_Modificado" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Usuario" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tblEstadosCuentas">
+    <Key>
+      <PropertyRef Name="id_Estado_Cartera" />
+    </Key>
+    <Property Name="id_Estado_Cartera" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Estado_Cartera" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblCartera">
+    <Key>
+      <PropertyRef Name="id_Cartera" />
+    </Key>
+    <Property Name="id_Cartera" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Doc_Cliente" Type="String" Nullable="false" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="Sobre" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Titulo_Valor" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Valor" Type="Double" Nullable="false" />
+    <Property Name="Documento_Activo" Type="Boolean" Nullable="false" />
+    <Property Name="Suma_Total" Type="Double" Nullable="false" />
+    <Property Name="Adjuntar_Archivo" Type="Boolean" />
+    <Property Name="Nombre_Archivo" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="Ruta" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Estado_Cuenta" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Subido" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="fecha_Actualizado" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Usuario" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tblClientes">
+    <Key>
+      <PropertyRef Name="Numero_Documento_Cliente" />
+    </Key>
+    <Property Name="id_Cliente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Primer_Nombre" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Segundo_Nombre" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Otro_Nombre" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Primer_Apellido" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Segundo_Apellido" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Tipo_Documento" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Numero_Documento_Cliente" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Departamento_Expedicion" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Ciudad_Expedicion" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Otro_Lugar_Expedicion" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Nacimiento" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Tipo_Registro" Type="String" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Lugar_Registro" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Departamento_Registro" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Ciudad_Registro" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Otro_Lugar_Registro" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Telefono_Fijo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Telefono_Celular" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Correo" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Red_Social" Type="String" MaxLength="35" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Red_Social" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Departamento_Residencia" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Ciudad_Residencia" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Otro_Lugar_Residencia" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Casa_Propia" Type="Boolean" Nullable="false" />
+    <Property Name="Direccion_Residencia" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Barrio" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Fuerza" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Grado" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Ingreso" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Fecha_Salida" Type="DateTime" Precision="0" />
+    <Property Name="Año_Contingente" Type="Int32" Nullable="false" />
+    <Property Name="Numero_Contigente" Type="Int32" Nullable="false" />
+    <Property Name="Batallon" Type="String" Nullable="false" MaxLength="160" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Hechos" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Dispensario" Type="String" Nullable="false" MaxLength="160" FixedLength="false" Unicode="false" />
+    <Property Name="Estado_Proceso" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Etapa_Proceso" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Autenticado" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Fecha_Creado" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Fecha_Actualizado" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Usurio" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tblCorreosClientes">
+    <Key>
+      <PropertyRef Name="id_Correo" />
+    </Key>
+    <Property Name="id_Correo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Doc_Cliente" Type="String" Nullable="false" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="Correo" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Insertado" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Fecha_Actualizado" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Usuario" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tblTelefonosClientes">
+    <Key>
+      <PropertyRef Name="id_Telefono" />
+    </Key>
+    <Property Name="id_Telefono" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Doc_Cliente" Type="String" Nullable="false" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="Numero_Telefono" Type="String" Nullable="false" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Insertado" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Fecha_Actualizado" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Usuario" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tblCorreosFamilia">
+    <Key>
+      <PropertyRef Name="id_Correo" />
+    </Key>
+    <Property Name="id_Correo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Doc_Familiar" Type="String" Nullable="false" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="Correo" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Insertado" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Fecha_Actualizado" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Usuario" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tblTelefonosFamilia">
+    <Key>
+      <PropertyRef Name="id_Telefono" />
+    </Key>
+    <Property Name="id_Telefono" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Doc_Familiar" Type="String" Nullable="false" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="Numero_Telefono" Type="String" Nullable="false" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Insertado" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Fecha_Actualizado" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Usuario" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tblAbogados">
+    <Key>
+      <PropertyRef Name="id_Abogados" />
+    </Key>
+    <Property Name="id_Abogados" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Abogado" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Correo_Abogado" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblJuzgados">
+    <Key>
+      <PropertyRef Name="id_Juzgado" />
+    </Key>
+    <Property Name="id_Juzgado" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Juzgado" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblProcuradurias">
+    <Key>
+      <PropertyRef Name="id_Procuraduria" />
+    </Key>
+    <Property Name="id_Procuraduria" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Procuraduria" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblBatallones">
+    <Key>
+      <PropertyRef Name="id_Batallon" />
+    </Key>
+    <Property Name="id_Batallon" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Batallon" Type="String" Nullable="false" MaxLength="160" FixedLength="false" Unicode="false" />
+    <Property Name="Fuerza" Type="Int32" Nullable="false" />
+    <Property Name="Estado" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblDispensarios">
+    <Key>
+      <PropertyRef Name="id_Dispensario" />
+    </Key>
+    <Property Name="id_Dispensario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Dispensario" Type="String" Nullable="false" MaxLength="160" FixedLength="false" Unicode="false" />
+    <Property Name="Fuerza" Type="Int32" Nullable="false" />
+    <Property Name="Estado" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblAudienciasJuzgado">
+    <Key>
+      <PropertyRef Name="id_Audiencia_Juzgado" />
+    </Key>
+    <Property Name="id_Audiencia_Juzgado" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Doc_Cliente" Type="String" Nullable="false" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="Primer_Nombre" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Segundo_Nombre" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Primer_Apellido" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="SegundoApellido" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Numero_Proceso" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Juzgado" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Audiencia" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Abogado" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Correo_Abogado" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Observaciones" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Adjuntar_Archivo" Type="Boolean" Nullable="false" />
+    <Property Name="Ruta" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Archivo" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="Informar_Cliente" Type="Boolean" Nullable="false" />
+    <Property Name="Informar_Abogado" Type="Boolean" Nullable="false" />
+    <Property Name="Fecha_Subido" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Fecha_Actualizado" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Usuario" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tblAudienciasProcuraduria">
+    <Key>
+      <PropertyRef Name="id_Audiencia_Procuraduria" />
+    </Key>
+    <Property Name="id_Audiencia_Procuraduria" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Doc_Cliente" Type="String" Nullable="false" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="Primer_Nombre" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Segundo_Nombre" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Primer_Apellido" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="SegundoApellido" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Numero_Proceso" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Procuraduria" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Audiencia" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Abogado" Type="String" Nullable="false" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Correo_Abogado" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Observaciones" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Adjuntar_Archivo" Type="Boolean" Nullable="false" />
+    <Property Name="Ruta" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Archivo" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="Informar_Cliente" Type="Boolean" Nullable="false" />
+    <Property Name="Informar_Abogado" Type="Boolean" Nullable="false" />
+    <Property Name="Fecha_Subido" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Fecha_Actualizado" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Usuario" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tblAreas">
+    <Key>
+      <PropertyRef Name="id_Area" />
+    </Key>
+    <Property Name="id_Area" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Area" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblAreasTareas">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Area" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Tipo_Tarea" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Tarea" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Dias" Type="Int32" Nullable="false" />
+    <Property Name="Estado" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblEstadosTarea">
+    <Key>
+      <PropertyRef Name="id_Tarea" />
+    </Key>
+    <Property Name="id_Tarea" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Estado" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblPrioridad">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Prioridad" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblRegistrarSeguimiento">
+    <Key>
+      <PropertyRef Name="id_Seguimiento" />
+    </Key>
+    <Property Name="id_Seguimiento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_Solicitud" Type="Int32" Nullable="false" />
+    <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Adjunto" Type="Boolean" Nullable="false" />
+    <Property Name="Ruta" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Archivo" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="Notificar_Responsable" Type="Boolean" Nullable="false" />
+    <Property Name="Estado" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Seguimiento" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Usuario_Seguimiento" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tblTarea">
+    <Key>
+      <PropertyRef Name="id_Tarea" />
+    </Key>
+    <Property Name="id_Tarea" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Tarea" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblTipoTarea">
+    <Key>
+      <PropertyRef Name="id_Tipo_Tarea" />
+    </Key>
+    <Property Name="id_Tipo_Tarea" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Tipo_Tarea" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblUsuarioArea">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Area" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Usuario" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblRegistrarTareas">
+    <Key>
+      <PropertyRef Name="id_Solicitud" />
+    </Key>
+    <Property Name="id_Solicitud" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_Tarea" Type="Int32" Nullable="false" />
+    <Property Name="Creador" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Responsable" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Doc_Cliente" Type="String" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="Primer_Nombre" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Segundo_Nombre" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Primer_Apellido" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Segundo_Apellido" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Prioridad" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Adjunto" Type="Boolean" Nullable="false" />
+    <Property Name="Ruta" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Nombre_Archivo" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="Notificar_Responsable" Type="Boolean" Nullable="false" />
+    <Property Name="Area_Creadora" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Asignado" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Fecha_Actualizado" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+</Schema>

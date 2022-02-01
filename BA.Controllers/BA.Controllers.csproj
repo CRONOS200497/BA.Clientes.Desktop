@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5077575C-3692-4B8F-B8C2-C4AAFF262D9D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BA.Controllers</RootNamespace>
+    <AssemblyName>BA.Controllers</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\AbogadosController.cs" />
+    <Compile Include="Controllers\AreasController.cs" />
+    <Compile Include="Controllers\AreasTareasController.cs" />
+    <Compile Include="Controllers\AudienciasJuzgadosController.cs" />
+    <Compile Include="Controllers\AudienciasProcuraduriasController.cs" />
+    <Compile Include="Controllers\BatallonesControllers.cs" />
+    <Compile Include="Controllers\CarteraController.cs" />
+    <Compile Include="Controllers\CitasMedicasController.cs" />
+    <Compile Include="Controllers\CiudadesController.cs" />
+    <Compile Include="Controllers\ClientesController.cs" />
+    <Compile Include="Controllers\ConceptosController.cs" />
+    <Compile Include="Controllers\ConceptosMedicosController.cs" />
+    <Compile Include="Controllers\CorreosClientesController.cs" />
+    <Compile Include="Controllers\CorreosFamiliaController.cs" />
+    <Compile Include="Controllers\DepartamentoController.cs" />
+    <Compile Include="Controllers\DispensariosControllers.cs" />
+    <Compile Include="Controllers\DocumentosCargadosController.cs" />
+    <Compile Include="Controllers\DocumentosCargadosFamiliaresController.cs" />
+    <Compile Include="Controllers\DocumentosClientesController.cs" />
+    <Compile Include="Controllers\DocumentosFamiliaresController.cs" />
+    <Compile Include="Controllers\EstadosCitasMedicasController.cs" />
+    <Compile Include="Controllers\EstadosConceptosController.cs" />
+    <Compile Include="Controllers\EstadosCuentasController.cs" />
+    <Compile Include="Controllers\EstadosFichasMedicasController.cs" />
+    <Compile Include="Controllers\EstadosJuntasMedicasController.cs" />
+    <Compile Include="Controllers\EstadosProcesosController.cs" />
+    <Compile Include="Controllers\EstadoTareaController.cs" />
+    <Compile Include="Controllers\EtapasProcesosController.cs" />
+    <Compile Include="Controllers\FamiliaController.cs" />
+    <Compile Include="Controllers\FichasMedicasController.cs" />
+    <Compile Include="Controllers\FuerzaController.cs" />
+    <Compile Include="Controllers\GradosController.cs" />
+    <Compile Include="Controllers\HistorialController.cs" />
+    <Compile Include="Controllers\JuntasMedicasController.cs" />
+    <Compile Include="Controllers\JuzgadosController.cs" />
+    <Compile Include="Controllers\NovedadesController.cs" />
+    <Compile Include="Controllers\NovedadesFamiliaController.cs" />
+    <Compile Include="Controllers\ParametrosControllers.cs" />
+    <Compile Include="Controllers\PerfilesController.cs" />
+    <Compile Include="Controllers\PrioridadController.cs" />
+    <Compile Include="Controllers\ProcuraduriasController.cs" />
+    <Compile Include="Controllers\RegistrarSeguimientoTareaController.cs" />
+    <Compile Include="Controllers\RegistrarTareasController.cs" />
+    <Compile Include="Controllers\RolesController.cs" />
+    <Compile Include="Controllers\SeguimientoClienteController.cs" />
+    <Compile Include="Controllers\SeguimientoFamiliarController.cs" />
+    <Compile Include="Controllers\TareaController.cs" />
+    <Compile Include="Controllers\TelefonosClientesController.cs" />
+    <Compile Include="Controllers\TelefonosFamiliaController.cs" />
+    <Compile Include="Controllers\TipoFamiliarController.cs" />
+    <Compile Include="Controllers\RedesSocialesController.cs" />
+    <Compile Include="Controllers\TipoDocumentoController.cs" />
+    <Compile Include="Controllers\TipoRegistroController.cs" />
+    <Compile Include="Controllers\TiposNovedadesController.cs" />
+    <Compile Include="Controllers\TiposSeguimientosController.cs" />
+    <Compile Include="Controllers\TipoTareaController.cs" />
+    <Compile Include="Controllers\TitulosValoresController.cs" />
+    <Compile Include="Controllers\UsuariosAreaController.cs" />
+    <Compile Include="Controllers\UsuariosController.cs" />
+    <Compile Include="Controllers\Encrypt.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BA.Models\BA.Models.csproj">
+      <Project>{b3e2e8b5-5c06-492d-9b40-e831e0a7e12a}</Project>
+      <Name>BA.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

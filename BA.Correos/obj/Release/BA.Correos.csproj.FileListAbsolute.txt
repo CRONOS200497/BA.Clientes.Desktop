@@ -1,0 +1,11 @@
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Correos\bin\Release\BA.Correos.dll
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Correos\bin\Release\BA.Correos.pdb
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Correos\bin\Release\BA.Controllers.dll
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Correos\bin\Release\BA.Models.dll
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Correos\bin\Release\EntityFramework.dll
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Correos\bin\Release\BA.Controllers.pdb
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Correos\bin\Release\BA.Models.pdb
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Correos\bin\Release\EntityFramework.xml
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Correos\obj\Release\BA.Correos.csprojResolveAssemblyReference.cache
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Correos\obj\Release\BA.Correos.dll
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Correos\obj\Release\BA.Correos.pdb

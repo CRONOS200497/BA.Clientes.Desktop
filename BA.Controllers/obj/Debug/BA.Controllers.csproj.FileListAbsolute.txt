@@ -1,0 +1,60 @@
+C:\Users\AndresFelipeRojasLop\documents\visual studio 2015\Projects\BA.Clientes.Desktop\BA.Controllers\bin\Debug\BA.Controllers.dll.config
+C:\Users\AndresFelipeRojasLop\documents\visual studio 2015\Projects\BA.Clientes.Desktop\BA.Controllers\bin\Debug\BA.Controllers.dll
+C:\Users\AndresFelipeRojasLop\documents\visual studio 2015\Projects\BA.Clientes.Desktop\BA.Controllers\bin\Debug\BA.Controllers.pdb
+C:\Users\AndresFelipeRojasLop\documents\visual studio 2015\Projects\BA.Clientes.Desktop\BA.Controllers\bin\Debug\BA.Models.dll
+C:\Users\AndresFelipeRojasLop\documents\visual studio 2015\Projects\BA.Clientes.Desktop\BA.Controllers\bin\Debug\EntityFramework.dll
+C:\Users\AndresFelipeRojasLop\documents\visual studio 2015\Projects\BA.Clientes.Desktop\BA.Controllers\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\AndresFelipeRojasLop\documents\visual studio 2015\Projects\BA.Clientes.Desktop\BA.Controllers\bin\Debug\BA.Models.pdb
+C:\Users\AndresFelipeRojasLop\documents\visual studio 2015\Projects\BA.Clientes.Desktop\BA.Controllers\bin\Debug\EntityFramework.xml
+C:\Users\AndresFelipeRojasLop\documents\visual studio 2015\Projects\BA.Clientes.Desktop\BA.Controllers\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\AndresFelipeRojasLop\documents\visual studio 2015\Projects\BA.Clientes.Desktop\BA.Controllers\obj\Debug\BA.Controllers.csprojResolveAssemblyReference.cache
+C:\Users\AndresFelipeRojasLop\documents\visual studio 2015\Projects\BA.Clientes.Desktop\BA.Controllers\obj\Debug\BA.Controllers.dll
+C:\Users\AndresFelipeRojasLop\documents\visual studio 2015\Projects\BA.Clientes.Desktop\BA.Controllers\obj\Debug\BA.Controllers.pdb
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Controllers\bin\Debug\BA.Controllers.dll.config
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Controllers\bin\Debug\BA.Controllers.dll
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Controllers\bin\Debug\BA.Controllers.pdb
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Controllers\bin\Debug\BA.Models.dll
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Controllers\bin\Debug\EntityFramework.dll
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Controllers\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Controllers\bin\Debug\BA.Models.pdb
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Controllers\bin\Debug\EntityFramework.xml
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Controllers\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Controllers\obj\Debug\BA.Controllers.csprojResolveAssemblyReference.cache
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Controllers\obj\Debug\BA.Controllers.dll
+C:\Users\andre\Documents\Visual Studio 2015\Projects\BA.Clientes.Desktop\BA.Controllers\obj\Debug\BA.Controllers.pdb
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Controllers\bin\Debug\BA.Controllers.dll.config
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Controllers\bin\Debug\BA.Controllers.dll
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Controllers\bin\Debug\BA.Controllers.pdb
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Controllers\bin\Debug\BA.Models.dll
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Controllers\bin\Debug\EntityFramework.dll
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Controllers\bin\Debug\EntityFramework.SqlServer.dll
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Controllers\bin\Debug\BA.Models.pdb
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Controllers\bin\Debug\EntityFramework.xml
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Controllers\bin\Debug\EntityFramework.SqlServer.xml
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Controllers\obj\Debug\BA.Controllers.csprojResolveAssemblyReference.cache
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Controllers\obj\Debug\BA.Controllers.dll
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 1\BA.Clientes.Desktop\BA.Controllers\obj\Debug\BA.Controllers.pdb
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Controllers\bin\Debug\BA.Controllers.dll.config
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Controllers\bin\Debug\BA.Controllers.dll
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Controllers\bin\Debug\BA.Controllers.pdb
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Controllers\bin\Debug\BA.Models.dll
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Controllers\bin\Debug\EntityFramework.dll
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Controllers\bin\Debug\EntityFramework.SqlServer.dll
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Controllers\bin\Debug\BA.Models.pdb
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Controllers\bin\Debug\EntityFramework.xml
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Controllers\bin\Debug\EntityFramework.SqlServer.xml
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Controllers\obj\Debug\BA.Controllers.csprojResolveAssemblyReference.cache
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Controllers\obj\Debug\BA.Controllers.dll
+F:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 2\BA.Clientes.Desktop\BA.Controllers\obj\Debug\BA.Controllers.pdb
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Controllers\bin\Debug\BA.Controllers.dll.config
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Controllers\bin\Debug\BA.Controllers.dll
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Controllers\bin\Debug\BA.Controllers.pdb
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Controllers\bin\Debug\BA.Models.dll
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Controllers\bin\Debug\EntityFramework.dll
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Controllers\bin\Debug\EntityFramework.SqlServer.dll
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Controllers\bin\Debug\BA.Models.pdb
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Controllers\bin\Debug\EntityFramework.xml
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Controllers\bin\Debug\EntityFramework.SqlServer.xml
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Controllers\obj\Debug\BA.Controllers.csprojResolveAssemblyReference.cache
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Controllers\obj\Debug\BA.Controllers.dll
+D:\Proyectos\Visual Studio 2015\Barrios Abogados\Version 3\BA.Clientes.Desktop\BA.Controllers\obj\Debug\BA.Controllers.pdb

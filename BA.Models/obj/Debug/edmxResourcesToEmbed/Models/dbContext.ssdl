@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbBarriosAbogadosModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblBatallones">
+    <Key>
+      <PropertyRef Name="id_Batallon" />
+    </Key>
+    <Property Name="id_Batallon" Type="int" Nullable="false" />
+    <Property Name="Nombre_Batallon" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Estado" Type="bit" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'dbBarriosAbogados.dbo.tblCiudades' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="tblCiudades">
+    <Key>
+      <PropertyRef Name="id_Ciudad" />
+      <PropertyRef Name="Nombre_Ciudad" />
+      <PropertyRef Name="id_Departamento" />
+    </Key>
+    <Property Name="id_Ciudad" Type="int" Nullable="false" />
+    <Property Name="Nombre_Ciudad" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="id_Departamento" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblClientes">
+    <Key>
+      <PropertyRef Name="id_Cliente" />
+    </Key>
+    <Property Name="id_Cliente" Type="int" Nullable="false" />
+    <Property Name="Primer_Nombre" Type="varchar" MaxLength="75" Nullable="false" />
+    <Property Name="Segundo_Nombre" Type="varchar" MaxLength="75" />
+    <Property Name="Otro_Nombre" Type="varchar" MaxLength="75" />
+    <Property Name="Primer_Apellido" Type="varchar" MaxLength="75" Nullable="false" />
+    <Property Name="Segundo_Apellido" Type="varchar" MaxLength="75" />
+    <Property Name="Tipo_Documento" Type="int" Nullable="false" />
+    <Property Name="Numero_Documento" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Departamento_Expedicion" Type="int" Nullable="false" />
+    <Property Name="Ciudad_Expedicion" Type="int" Nullable="false" />
+    <Property Name="Fecha_Nacimiento" Type="date" Nullable="false" />
+    <Property Name="Tipo_Registro" Type="int" Nullable="false" />
+    <Property Name="Nombre_Lugar_Registro" Type="varchar" MaxLength="75" Nullable="false" />
+    <Property Name="Departamento_Registro" Type="int" Nullable="false" />
+    <Property Name="Ciudad_Registro" Type="int" Nullable="false" />
+    <Property Name="Otro_Lugar_Registro" Type="varchar" MaxLength="75" Nullable="false" />
+    <Property Name="Telefono_Fijo" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="Telefono_Celular" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Correo" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="Red_Social" Type="int" />
+    <Property Name="Nombre_Red_Social" Type="varchar" MaxLength="75" />
+    <Property Name="Departamento_Residencia" Type="int" Nullable="false" />
+    <Property Name="Ciudad_Residencia" Type="int" Nullable="false" />
+    <Property Name="Otro_Lugar_Residencia" Type="varchar" MaxLength="75" />
+    <Property Name="Direccion_Residencia" Type="varchar" MaxLength="75" />
+    <Property Name="Barrio" Type="varchar" MaxLength="75" />
+    <Property Name="Fuerza" Type="int" Nullable="false" />
+    <Property Name="Fecha_Ingreso" Type="date" Nullable="false" />
+    <Property Name="Fecha_Salida" Type="date" />
+    <Property Name="Año_Contingente" Type="date" Nullable="false" />
+    <Property Name="Numero_Contigente" Type="int" Nullable="false" />
+    <Property Name="Dispensario" Type="int" Nullable="false" />
+    <Property Name="Batallon" Type="int" Nullable="false" />
+    <Property Name="Fecha_Autenticado" Type="date" Nullable="false" />
+    <Property Name="Fecha_Creado" Type="datetime" Nullable="false" />
+    <Property Name="Fecha_Actualizado" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblDepartamentos">
+    <Key>
+      <PropertyRef Name="id_Departamento" />
+    </Key>
+    <Property Name="id_Departamento" Type="int" Nullable="false" />
+    <Property Name="Nombre_Departamento" Type="varchar" MaxLength="80" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'dbBarriosAbogados.dbo.tblDispensario' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="tblDispensario">
+    <Key>
+      <PropertyRef Name="id_Dispensario" />
+      <PropertyRef Name="Nombre_Dispensario" />
+    </Key>
+    <Property Name="id_Dispensario" Type="int" Nullable="false" />
+    <Property Name="Nombre_Dispensario" Type="varchar" MaxLength="150" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblDocumentosClientes">
+    <Key>
+      <PropertyRef Name="id_documento" />
+    </Key>
+    <Property Name="id_documento" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre_Documento" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="estado" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblDocumentosFamilia">
+    <Key>
+      <PropertyRef Name="id_documento_Familia" />
+    </Key>
+    <Property Name="id_documento_Familia" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre_Documento_Familia" Type="varchar" MaxLength="75" Nullable="false" />
+    <Property Name="Estado" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblDocumentosNovedades">
+    <Key>
+      <PropertyRef Name="id_Documento_Novedad" />
+    </Key>
+    <Property Name="id_Documento_Novedad" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre_Documento_Novedad" Type="varchar" MaxLength="75" Nullable="false" />
+    <Property Name="estado" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblFamilia">
+    <Key>
+      <PropertyRef Name="id_Familiar" />
+    </Key>
+    <Property Name="id_Familiar" Type="int" Nullable="false" />
+    <Property Name="id_cliente" Type="int" Nullable="false" />
+    <Property Name="Primer_Nombre" Type="varchar" MaxLength="75" Nullable="false" />
+    <Property Name="Segundo_Nombre" Type="varchar" MaxLength="75" />
+    <Property Name="Otro_Nombre" Type="varchar" MaxLength="75" />
+    <Property Name="Primer_Apellido" Type="varchar" MaxLength="75" Nullable="false" />
+    <Property Name="Segundo_Apellido" Type="varchar" MaxLength="75" />
+    <Property Name="Tipo_Documento" Type="int" Nullable="false" />
+    <Property Name="Numero_Documento" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Departamento_Expedicion" Type="int" Nullable="false" />
+    <Property Name="Ciudad_Expedicion" Type="int" Nullable="false" />
+    <Property Name="Fecha_Nacimiento" Type="date" Nullable="false" />
+    <Property Name="Tipo_Registro" Type="int" Nullable="false" />
+    <Property Name="Nombre_Lugar_Registro" Type="varchar" MaxLength="75" Nullable="false" />
+    <Property Name="Departamento_Registro" Type="int" Nullable="false" />
+    <Property Name="Ciudad_Registro" Type="int" Nullable="false" />
+    <Property Name="Otro_Lugar_Registro" Type="varchar" MaxLength="75" />
+    <Property Name="Telefono_Fijo" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="Telefono_Celular" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="Correo" Type="varchar" MaxLength="150" />
+    <Property Name="Red_Social" Type="int" />
+    <Property Name="Nombre_Red_Social" Type="varchar" MaxLength="75" />
+    <Property Name="Departamento_Residencia" Type="int" Nullable="false" />
+    <Property Name="Ciudad_Residencia" Type="int" Nullable="false" />
+    <Property Name="Otro_Lugar_Residencia" Type="varchar" MaxLength="75" />
+    <Property Name="Direccion_Residencia" Type="varchar" MaxLength="75" />
+    <Property Name="Barrio" Type="varchar" MaxLength="75" />
+    <Property Name="Fecha_Autenticacion" Type="date" Nullable="false" />
+    <Property Name="Fecha_Creacion" Type="datetime" Nullable="false" />
+    <Property Name="Fecha_Actualizacion" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblFuerza">
+    <Key>
+      <PropertyRef Name="id_Fuerza" />
+    </Key>
+    <Property Name="id_Fuerza" Type="int" Nullable="false" />
+    <Property Name="Nombre_Fuerza" Type="varchar" MaxLength="25" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblGrados">
+    <Key>
+      <PropertyRef Name="id_grado" />
+    </Key>
+    <Property Name="id_grado" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre_Rago" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="id_fuerza" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblRedesSociales">
+    <Key>
+      <PropertyRef Name="id_RedSocial" />
+    </Key>
+    <Property Name="id_RedSocial" Type="int" Nullable="false" />
+    <Property Name="Nombre_Red_Social" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblTipoDocumento">
+    <Key>
+      <PropertyRef Name="id_Tipo_Documento" />
+    </Key>
+    <Property Name="id_Tipo_Documento" Type="int" Nullable="false" />
+    <Property Name="Nombre_Tipo_Documento" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="Sigla" Type="varchar" MaxLength="5" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblTipoFamiliar">
+    <Key>
+      <PropertyRef Name="id_Tipo_Familiar" />
+    </Key>
+    <Property Name="id_Tipo_Familiar" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblTipoRegistro">
+    <Key>
+      <PropertyRef Name="id_Tipo_Registro" />
+    </Key>
+    <Property Name="id_Tipo_Registro" Type="int" Nullable="false" />
+    <Property Name="Nombre_Tipo_Registro" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblTitulosValores">
+    <Key>
+      <PropertyRef Name="id_Titulos_Valores" />
+    </Key>
+    <Property Name="id_Titulos_Valores" Type="int" Nullable="false" />
+    <Property Name="Nombre_Titulo_Valor" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_tblCiudades_tblDepartamentos">
+    <End Role="tblDepartamentos" Type="Self.tblDepartamentos" Multiplicity="1" />
+    <End Role="tblCiudades" Type="Self.tblCiudades" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblDepartamentos">
+        <PropertyRef Name="id_Departamento" />
+      </Principal>
+      <Dependent Role="tblCiudades">
+        <PropertyRef Name="id_Departamento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblFamilia_tblClientes">
+    <End Role="tblClientes" Type="Self.tblClientes" Multiplicity="1" />
+    <End Role="tblFamilia" Type="Self.tblFamilia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblClientes">
+        <PropertyRef Name="id_Cliente" />
+      </Principal>
+      <Dependent Role="tblFamilia">
+        <PropertyRef Name="id_cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblGrados_tblFuerza">
+    <End Role="tblFuerza" Type="Self.tblFuerza" Multiplicity="1" />
+    <End Role="tblGrados" Type="Self.tblGrados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblFuerza">
+        <PropertyRef Name="id_Fuerza" />
+      </Principal>
+      <Dependent Role="tblGrados">
+        <PropertyRef Name="id_fuerza" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="dbBarriosAbogadosModelStoreContainer">
+    <EntitySet Name="tblBatallones" EntityType="Self.tblBatallones" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblClientes" EntityType="Self.tblClientes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblDepartamentos" EntityType="Self.tblDepartamentos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblDocumentosClientes" EntityType="Self.tblDocumentosClientes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblDocumentosFamilia" EntityType="Self.tblDocumentosFamilia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblDocumentosNovedades" EntityType="Self.tblDocumentosNovedades" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblFamilia" EntityType="Self.tblFamilia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblFuerza" EntityType="Self.tblFuerza" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblGrados" EntityType="Self.tblGrados" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblRedesSociales" EntityType="Self.tblRedesSociales" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblTipoDocumento" EntityType="Self.tblTipoDocumento" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblTipoFamiliar" EntityType="Self.tblTipoFamiliar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblTipoRegistro" EntityType="Self.tblTipoRegistro" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblTitulosValores" EntityType="Self.tblTitulosValores" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblCiudades" EntityType="Self.tblCiudades" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblCiudades].[id_Ciudad] AS [id_Ciudad], 
+    [tblCiudades].[Nombre_Ciudad] AS [Nombre_Ciudad], 
+    [tblCiudades].[id_Departamento] AS [id_Departamento]
+    FROM [dbo].[tblCiudades] AS [tblCiudades]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblDispensario" EntityType="Self.tblDispensario" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblDispensario].[id_Dispensario] AS [id_Dispensario], 
+    [tblDispensario].[Nombre_Dispensario] AS [Nombre_Dispensario]
+    FROM [dbo].[tblDispensario] AS [tblDispensario]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_tblCiudades_tblDepartamentos" Association="Self.FK_tblCiudades_tblDepartamentos">
+      <End Role="tblDepartamentos" EntitySet="tblDepartamentos" />
+      <End Role="tblCiudades" EntitySet="tblCiudades" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblFamilia_tblClientes" Association="Self.FK_tblFamilia_tblClientes">
+      <End Role="tblClientes" EntitySet="tblClientes" />
+      <End Role="tblFamilia" EntitySet="tblFamilia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblGrados_tblFuerza" Association="Self.FK_tblGrados_tblFuerza">
+      <End Role="tblFuerza" EntitySet="tblFuerza" />
+      <End Role="tblGrados" EntitySet="tblGrados" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

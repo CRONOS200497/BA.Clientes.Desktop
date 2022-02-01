@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbBarriosAbogadosModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tblBatallones">
+    <Key>
+      <PropertyRef Name="id_Batallon" />
+    </Key>
+    <Property Name="id_Batallon" Type="Int32" Nullable="false" />
+    <Property Name="Nombre_Batallon" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Estado" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblClientes">
+    <Key>
+      <PropertyRef Name="id_Cliente" />
+    </Key>
+    <Property Name="id_Cliente" Type="Int32" Nullable="false" />
+    <Property Name="Primer_Nombre" Type="String" MaxLength="75" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Segundo_Nombre" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Otro_Nombre" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Primer_Apellido" Type="String" MaxLength="75" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Segundo_Apellido" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Tipo_Documento" Type="Int32" Nullable="false" />
+    <Property Name="Numero_Documento" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Departamento_Expedicion" Type="Int32" Nullable="false" />
+    <Property Name="Ciudad_Expedicion" Type="Int32" Nullable="false" />
+    <Property Name="Otro_Lugar_Expedicion" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Nacimiento" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Tipo_Registro" Type="Int32" Nullable="false" />
+    <Property Name="Nombre_Lugar_Registro" Type="String" MaxLength="75" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Departamento_Registro" Type="Int32" Nullable="false" />
+    <Property Name="Ciudad_Registro" Type="Int32" Nullable="false" />
+    <Property Name="Otro_Lugar_Registro" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Telefono_Fijo" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Telefono_Celular" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Correo" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Red_Social" Type="Int32" />
+    <Property Name="Nombre_Red_Social" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Departamento_Residencia" Type="Int32" Nullable="false" />
+    <Property Name="Ciudad_Residencia" Type="Int32" Nullable="false" />
+    <Property Name="Otro_Lugar_Residencia" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Casa_Propia" Type="Boolean" Nullable="false" />
+    <Property Name="Direccion_Residencia" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Barrio" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Fuerza" Type="Int32" Nullable="false" />
+    <Property Name="Fecha_Ingreso" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Fecha_Salida" Type="DateTime" Precision="0" />
+    <Property Name="Año_Contingente" Type="Int32" Nullable="false" />
+    <Property Name="Numero_Contigente" Type="Int32" Nullable="false" />
+    <Property Name="Dispensario" Type="Int32" Nullable="false" />
+    <Property Name="Batallon" Type="Int32" Nullable="false" />
+    <Property Name="Fecha_Autenticado" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Fecha_Creado" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Fecha_Actualizado" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="tblFamilia" Relationship="Self.FK_tblFamilia_tblClientes" FromRole="tblClientes" ToRole="tblFamilia" />
+  </EntityType>
+  <EntityType Name="tblDepartamentos">
+    <Key>
+      <PropertyRef Name="id_Departamento" />
+    </Key>
+    <Property Name="id_Departamento" Type="Int32" Nullable="false" />
+    <Property Name="Nombre_Departamento" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="tblCiudades" Relationship="Self.FK_tblCiudades_tblDepartamentos" FromRole="tblDepartamentos" ToRole="tblCiudades" />
+  </EntityType>
+  <EntityType Name="tblDispensarios">
+    <Key>
+      <PropertyRef Name="id_Dispensario" />
+    </Key>
+    <Property Name="id_Dispensario" Type="Int32" Nullable="false" />
+    <Property Name="Nombre_Dispensario" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Estado" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblDocumentosClientes">
+    <Key>
+      <PropertyRef Name="id_documento" />
+    </Key>
+    <Property Name="id_documento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Documento" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="estado" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblDocumentosFamilia">
+    <Key>
+      <PropertyRef Name="id_documento_Familia" />
+    </Key>
+    <Property Name="id_documento_Familia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Documento_Familia" Type="String" MaxLength="75" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Estado" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblDocumentosNovedades">
+    <Key>
+      <PropertyRef Name="id_Documento_Novedad" />
+    </Key>
+    <Property Name="id_Documento_Novedad" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Documento_Novedad" Type="String" MaxLength="75" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="estado" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblFamilia">
+    <Key>
+      <PropertyRef Name="id_Familiar" />
+    </Key>
+    <Property Name="id_Familiar" Type="Int32" Nullable="false" />
+    <Property Name="id_cliente" Type="Int32" Nullable="false" />
+    <Property Name="Primer_Nombre" Type="String" MaxLength="75" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Segundo_Nombre" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Otro_Nombre" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Primer_Apellido" Type="String" MaxLength="75" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Segundo_Apellido" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Tipo_Documento" Type="Int32" Nullable="false" />
+    <Property Name="Numero_Documento" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Departamento_Expedicion" Type="Int32" Nullable="false" />
+    <Property Name="Ciudad_Expedicion" Type="Int32" Nullable="false" />
+    <Property Name="Otro_Lugar_Expedicion" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Nacimiento" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Tipo_Registro" Type="Int32" Nullable="false" />
+    <Property Name="Nombre_Lugar_Registro" Type="String" MaxLength="75" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Departamento_Registro" Type="Int32" Nullable="false" />
+    <Property Name="Ciudad_Registro" Type="Int32" Nullable="false" />
+    <Property Name="Otro_Lugar_Registro" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Telefono_Fijo" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Telefono_Celular" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Correo" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Red_Social" Type="Int32" />
+    <Property Name="Nombre_Red_Social" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Departamento_Residencia" Type="Int32" Nullable="false" />
+    <Property Name="Ciudad_Residencia" Type="Int32" Nullable="false" />
+    <Property Name="Otro_Lugar_Residencia" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Casa_Propia" Type="Boolean" Nullable="false" />
+    <Property Name="Direccion_Residencia" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Barrio" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Autenticacion" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Fecha_Creacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Fecha_Actualizacion" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="tblClientes" Relationship="Self.FK_tblFamilia_tblClientes" FromRole="tblFamilia" ToRole="tblClientes" />
+  </EntityType>
+  <EntityType Name="tblFuerza">
+    <Key>
+      <PropertyRef Name="id_Fuerza" />
+    </Key>
+    <Property Name="id_Fuerza" Type="Int32" Nullable="false" />
+    <Property Name="Nombre_Fuerza" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="tblGrados" Relationship="Self.FK_tblGrados_tblFuerza" FromRole="tblFuerza" ToRole="tblGrados" />
+  </EntityType>
+  <EntityType Name="tblGrados">
+    <Key>
+      <PropertyRef Name="id_grado" />
+    </Key>
+    <Property Name="id_grado" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Rago" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="id_fuerza" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tblFuerza" Relationship="Self.FK_tblGrados_tblFuerza" FromRole="tblGrados" ToRole="tblFuerza" />
+  </EntityType>
+  <EntityType Name="tblRedesSociales">
+    <Key>
+      <PropertyRef Name="id_RedSocial" />
+    </Key>
+    <Property Name="id_RedSocial" Type="Int32" Nullable="false" />
+    <Property Name="Nombre_Red_Social" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblTipoDocumento">
+    <Key>
+      <PropertyRef Name="id_Tipo_Documento" />
+    </Key>
+    <Property Name="id_Tipo_Documento" Type="Int32" Nullable="false" />
+    <Property Name="Nombre_Tipo_Documento" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Sigla" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblTipoFamiliar">
+    <Key>
+      <PropertyRef Name="id_Tipo_Familiar" />
+    </Key>
+    <Property Name="id_Tipo_Familiar" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblTipoRegistro">
+    <Key>
+      <PropertyRef Name="id_Tipo_Registro" />
+    </Key>
+    <Property Name="id_Tipo_Registro" Type="Int32" Nullable="false" />
+    <Property Name="Nombre_Tipo_Registro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblTitulosValores">
+    <Key>
+      <PropertyRef Name="id_Titulos_Valores" />
+    </Key>
+    <Property Name="id_Titulos_Valores" Type="Int32" Nullable="false" />
+    <Property Name="Nombre_Titulo_Valor" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblCiudades">
+    <Key>
+      <PropertyRef Name="id_Ciudad" />
+      <PropertyRef Name="Nombre_Ciudad" />
+      <PropertyRef Name="id_Departamento" />
+    </Key>
+    <Property Name="id_Ciudad" Type="Int32" Nullable="false" />
+    <Property Name="Nombre_Ciudad" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="id_Departamento" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tblDepartamentos" Relationship="Self.FK_tblCiudades_tblDepartamentos" FromRole="tblCiudades" ToRole="tblDepartamentos" />
+  </EntityType>
+  <Association Name="FK_tblFamilia_tblClientes">
+    <End Role="tblClientes" Type="Self.tblClientes" Multiplicity="1" />
+    <End Role="tblFamilia" Type="Self.tblFamilia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblClientes">
+        <PropertyRef Name="id_Cliente" />
+      </Principal>
+      <Dependent Role="tblFamilia">
+        <PropertyRef Name="id_cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblCiudades_tblDepartamentos">
+    <End Role="tblDepartamentos" Type="Self.tblDepartamentos" Multiplicity="1" />
+    <End Role="tblCiudades" Type="Self.tblCiudades" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblDepartamentos">
+        <PropertyRef Name="id_Departamento" />
+      </Principal>
+      <Dependent Role="tblCiudades">
+        <PropertyRef Name="id_Departamento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblGrados_tblFuerza">
+    <End Role="tblFuerza" Type="Self.tblFuerza" Multiplicity="1" />
+    <End Role="tblGrados" Type="Self.tblGrados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblFuerza">
+        <PropertyRef Name="id_Fuerza" />
+      </Principal>
+      <Dependent Role="tblGrados">
+        <PropertyRef Name="id_fuerza" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="dbBarriosAbogadosEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblBatallones" EntityType="Self.tblBatallones" />
+    <EntitySet Name="tblClientes" EntityType="Self.tblClientes" />
+    <EntitySet Name="tblDepartamentos" EntityType="Self.tblDepartamentos" />
+    <EntitySet Name="tblDispensarios" EntityType="Self.tblDispensarios" />
+    <EntitySet Name="tblDocumentosClientes" EntityType="Self.tblDocumentosClientes" />
+    <EntitySet Name="tblDocumentosFamilia" EntityType="Self.tblDocumentosFamilia" />
+    <EntitySet Name="tblDocumentosNovedades" EntityType="Self.tblDocumentosNovedades" />
+    <EntitySet Name="tblFamilia" EntityType="Self.tblFamilia" />
+    <EntitySet Name="tblFuerza" EntityType="Self.tblFuerza" />
+    <EntitySet Name="tblGrados" EntityType="Self.tblGrados" />
+    <EntitySet Name="tblRedesSociales" EntityType="Self.tblRedesSociales" />
+    <EntitySet Name="tblTipoDocumento" EntityType="Self.tblTipoDocumento" />
+    <EntitySet Name="tblTipoFamiliar" EntityType="Self.tblTipoFamiliar" />
+    <EntitySet Name="tblTipoRegistro" EntityType="Self.tblTipoRegistro" />
+    <EntitySet Name="tblTitulosValores" EntityType="Self.tblTitulosValores" />
+    <EntitySet Name="tblCiudades" EntityType="Self.tblCiudades" />
+    <AssociationSet Name="FK_tblFamilia_tblClientes" Association="Self.FK_tblFamilia_tblClientes">
+      <End Role="tblClientes" EntitySet="tblClientes" />
+      <End Role="tblFamilia" EntitySet="tblFamilia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblCiudades_tblDepartamentos" Association="Self.FK_tblCiudades_tblDepartamentos">
+      <End Role="tblDepartamentos" EntitySet="tblDepartamentos" />
+      <End Role="tblCiudades" EntitySet="tblCiudades" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblGrados_tblFuerza" Association="Self.FK_tblGrados_tblFuerza">
+      <End Role="tblFuerza" EntitySet="tblFuerza" />
+      <End Role="tblGrados" EntitySet="tblGrados" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

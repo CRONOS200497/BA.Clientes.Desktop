@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="566554fa968d4436940c54d070e7e83b" Name="Diagram1">
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblDepartamentos" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblDocumentosClientes" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblDocumentosFamilia" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblDocumentosNovedades" Width="1.5" PointX="7.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblEstadosProcesos" Width="1.5" PointX="7.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblEtapasProceso" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblFuerza" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblGrados" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblRedesSociales" Width="1.5" PointX="0.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblTipoDocumento" Width="1.5" PointX="2.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblTipoFamiliar" Width="1.5" PointX="9.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblTipoRegistro" Width="1.5" PointX="9.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblTitulosValores" Width="1.5" PointX="7.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblCiudades" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <AssociationConnector Association="dbBarriosAbogadosModel.FK_tblCiudades_tblDepartamentos" ManuallyRouted="false" />
+        <AssociationConnector Association="dbBarriosAbogadosModel.FK_tblGrados_tblFuerza" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblFamilia" Width="1.5" PointX="10.375" PointY="9.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblParametros" Width="1.5" PointX="0.75" PointY="12.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblDocumentosCargados" Width="1.5" PointX="12.375" PointY="0.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblDocumentosCargadosFamilia" Width="1.5" PointX="12.375" PointY="4.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblPerfiles" Width="1.5" PointX="12.375" PointY="8.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblRoles" Width="1.5" PointX="12.375" PointY="11.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblUsuarios" Width="1.5" PointX="14.375" PointY="0.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblTiposSeguimientos" Width="1.5" PointX="5.375" PointY="14.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblNovedades" Width="1.5" PointX="7.375" PointY="14.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblNovedadesFamilia" Width="1.5" PointX="14.375" PointY="8.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblSeguimientoCliente" Width="1.5" PointX="14.375" PointY="4.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblSeguimientoFamiliar" Width="1.5" PointX="14.375" PointY="12.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblConceptos" Width="1.5" PointX="2.75" PointY="15.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblEstadosCitasMedicas" Width="1.5" PointX="16.75" PointY="5.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblEstadosConceptos" Width="1.5" PointX="16.75" PointY="8.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblEstadosFichasMedicas" Width="1.5" PointX="16.75" PointY="0.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblEstadosJuntasMedicas" Width="1.5" PointX="14.75" PointY="17.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblConceptosMedicos" Width="1.5" PointX="17.75" PointY="17.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblFichasMedicas" Width="1.5" PointX="0.75" PointY="18.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblJuntasMedicas" Width="1.5" PointX="3.375" PointY="18.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblCitasMedicas" Width="1.5" PointX="16.375" PointY="11.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblEstadosCuentas" Width="1.5" PointX="7.375" PointY="18.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblCartera" Width="1.5" PointX="9.375" PointY="18.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblClientes" Width="1.5" PointX="11.375" PointY="18.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblCorreosClientes" Width="1.5" PointX="18.375" PointY="11.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblTelefonosClientes" Width="1.5" PointX="18.375" PointY="14.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblCorreosFamilia" Width="1.5" PointX="19.375" PointY="0.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblTelefonosFamilia" Width="1.5" PointX="19.375" PointY="3.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblAbogados" Width="1.5" PointX="19.375" PointY="6.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblJuzgados" Width="1.5" PointX="20.375" PointY="9.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblProcuradurias" Width="1.5" PointX="20.375" PointY="12.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblBatallones" Width="1.5" PointX="21.375" PointY="0.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblDispensarios" Width="1.5" PointX="21.375" PointY="3.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblAudienciasJuzgado" Width="1.5" PointX="13.375" PointY="20.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblAudienciasProcuraduria" Width="1.5" PointX="20.375" PointY="15.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblAreas" Width="1.5" PointX="5.375" PointY="21.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblAreasTareas" Width="1.5" PointX="21.375" PointY="6.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblEstadosTarea" Width="1.5" PointX="20.375" PointY="21.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblPrioridad" Width="1.5" PointX="22.375" PointY="9.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblRegistrarSeguimiento" Width="1.5" PointX="22.375" PointY="12.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblTarea" Width="1.5" PointX="22.375" PointY="21.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblTipoTarea" Width="1.5" PointX="23.375" PointY="0.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblUsuarioArea" Width="1.5" PointX="23.375" PointY="3.75" />
+        <EntityTypeShape EntityType="dbBarriosAbogadosModel.tblRegistrarTareas" Width="1.5" PointX="7.375" PointY="23.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
